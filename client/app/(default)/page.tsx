@@ -38,30 +38,30 @@ export default function HomePage() {
     const services = [
         {
             id: 1,
-            title: 'Managed IT Services',
+            title: 'Multimodal Logistics',
             description:
-                'Comprehensive 24/7 IT support, maintenance, and monitoring to ensure optimal system performance and uptime.',
+                'One shipment. Multiple modes. One accountable logistics solution. We coordinate rail, sea, road and terminal operations across international trade routes.',
             image: '/images/icon-mangement.png',
         },
         {
             id: 2,
-            title: 'System Integration',
+            title: 'Rail Freight Solutions',
             description:
-                'Seamlessly connect software, hardware, and third-party platforms to create a unified IT ecosystem.',
+                'Reliable rail capacity across Russia, Central Asia, the Caucasus, Iran and beyond — from wagon allocation and loading to transit and final delivery.',
             image: '/images/icon-integration.png',
         },
         {
             id: 3,
-            title: 'AI & Automation Services',
+            title: 'Sea & Port Logistics',
             description:
-                'Leverage artificial intelligence and robotic process automation (RPA) to boost productivity and reduce manual tasks.',
+                'Connecting cargo to major ports and maritime routes across the Caspian, Black Sea, Persian Gulf and global markets — with coordinated port-to-port and multimodal execution.',
             image: '/images/icon-ai.png',
         },
         {
             id: 4,
-            title: 'End-to-End Support',
+            title: 'Customs & Trade Compliance',
             description:
-                'We provide personalized services solutions that drive impact, streamline operations, and deliver real results.',
+                'We manage the documentation, customs procedures, permits and regulatory requirements behind every movement — keeping cargo compliant, controlled and moving.',
             image: '/images/icon-support.png',
         },
     ]
@@ -69,35 +69,36 @@ export default function HomePage() {
     const projectList = [
         {
             id: 1,
-            title: 'ERP Integration for Retail',
-            description:
-                'Implemented SAP ERP to streamline operations across multiple departments.',
+            title: 'NORTH & SOUTH',
+            description: 'Russia → Azerbaijan → Iran → Gulf',
+            description2: 'Rail • Sea • Multimodal',
             image: '/images/project3.jpg',
             category: 'Software Development',
             url: '/project/project-details',
         },
         {
             id: 2,
-            title: 'Digital Commerce Platform',
-            description:
-                'Launched an eCommerce platform integrated with inventory and CRM tools.',
+            title: 'CENTRAL ASIA',
+            description: 'Russia → Kazakhstan → Central Asia → Afghanistan',
+            description2: 'Rail • Road • Multimodal',
             image: '/images/project4.jpg',
             category: 'Cybersecurity',
             url: '/project/project-details',
         },
         {
             id: 3,
-            title: 'Automation for Manufacturing',
-            description: 'Deployed RPA bots for invoice and order processing.',
+            title: 'CAUCASUS & TÜRKİYE',
+            description: 'Russia → Caspian → Azerbaijan → Georgia → Türkiye',
+            description2: 'Rail • Sea • Multimodal',
             image: '/images/project5.jpg',
             category: 'Automation',
             url: '/project/project-details',
         },
         {
             id: 4,
-            title: 'CRM Implementation for Finance Sector',
-            description:
-                'Designed and implemented a CRM system tailored for financial services.',
+            title: 'GLOBAL MARKETS',
+            description: 'Russia → Middle East → Asia → Africa',
+            description2: 'Rail • Sea • Road • Multimodal',
             image: '/images/project6.jpg',
             category: 'Software Development',
             url: '/project/project-details',
@@ -180,7 +181,7 @@ export default function HomePage() {
                                     suppliers, markets and destinations across
                                     borders.
                                 </p>
-                                <p className="mb-8 text-lg text-white drop-shadow-sm md:text-2xl font-semibold">
+                                <p className="mb-8 text-lg font-semibold text-white drop-shadow-sm md:text-2xl">
                                     RAIL • SEA • ROAD • MULTIMODAL
                                 </p>
 
@@ -229,7 +230,7 @@ export default function HomePage() {
                                             className="text-white"
                                         />
                                         <p className="text-sm text-white/80">
-                                           ON-TIME DELIVERY
+                                            ON-TIME DELIVERY
                                         </p>
                                     </div>
 
@@ -257,12 +258,15 @@ export default function HomePage() {
                         data-aos="fade-up"
                     >
                         <h3>LOGISTICS NETWORK</h3>
-                        <h2 className='text-lg'>Connecting international trade through strategic transport corridors.</h2>
+                        <h2 className="text-lg">
+                            Connecting international trade through strategic
+                            transport corridors.
+                        </h2>
                     </div>
                     <div className="mt-10 flex flex-col justify-start overflow-x-auto pb-2 lg:mt-14">
                         <div className="text-gray flex grid-cols-9 text-base lg:grid">
                             <div className="border-border flex h-28 w-28 shrink-0 items-center justify-center border-x-2 border-y-2 text-center font-bold uppercase xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                Web
+                                RAIL
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
                                 {/* <Image
@@ -271,7 +275,7 @@ export default function HomePage() {
                                     width={60}
                                     height={60}
                                 /> */}
-                                Angular
+                                RZD
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
                                 {/* <Image
@@ -280,188 +284,179 @@ export default function HomePage() {
                                     width={60}
                                     height={60}
                                 /> */}
-                                Laravel
+                                KTZ
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-html.svg"
                                     alt="html"
                                     width={60}
                                     height={60}
-                                />
-                                HTML
+                                /> */}
+                                ADY
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-node-js.svg"
                                     alt="node"
                                     width={60}
                                     height={60}
-                                />
-                                Node.js
+                                /> */}
+                                RAI
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-react.svg"
                                     alt="react"
                                     width={60}
                                     height={60}
-                                />
-                                React
+                                /> */}
+                                ARA
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-nuxt-js.svg"
                                     alt="Nuxt.js"
                                     width={60}
                                     height={60}
-                                />
-                                Nuxt.js
+                                /> */}
+                                TCDD
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-tailwind-css.svg"
                                     alt="Tailwind CSS"
                                     width={60}
                                     height={60}
-                                />
-                                Tailwind CSS
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
-                                    src="/images/icon-nextjs.svg"
-                                    alt="Next.js"
-                                    width={60}
-                                    height={60}
-                                />
-                                Next.js
+                                /> */}
+                                PR
                             </div>
                         </div>
                         <div className="text-gray flex grid-cols-9 text-base lg:grid">
                             <div className="border-border flex h-28 w-28 shrink-0 items-center justify-center border-x-2 border-b-2 text-center font-bold uppercase xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                Mobile
+                                Sea
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-flutter.svg"
                                     alt="Flutter"
                                     width={60}
                                     height={60}
-                                />
-                                Flutter
+                                /> */}
+                                RU
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-react.svg"
                                     alt="React Native"
                                     width={60}
                                     height={60}
-                                />
-                                React Native
+                                /> */}
+                                AZ
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-ios.svg"
                                     alt="iOS"
                                     width={60}
                                     height={60}
-                                />
-                                iOS
+                                /> */}
+                                GCC
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-android.svg"
                                     alt="Android"
                                     width={60}
                                     height={60}
-                                />
-                                Android
+                                /> */}
+                                AF
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-kotlin.svg"
                                     alt="Kotlin"
                                     width={60}
                                     height={60}
-                                />
-                                Kotlin
+                                /> */}
+                                IR
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-swift.svg"
                                     alt="Swift"
                                     width={60}
                                     height={60}
-                                />
-                                Swift
+                                /> */}
+                                PK
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-c++.svg"
                                     alt="C++"
                                     width={60}
                                     height={60}
-                                />
-                                C++
+                                /> */}
+                                IQ
                             </div>
                         </div>
                         <div className="text-gray flex grid-cols-9 text-base lg:grid">
                             <div className="border-border flex h-28 w-28 shrink-0 items-center justify-center border-x-2 border-b-2 text-center font-bold uppercase xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                Design
+                                CORRIDORS
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-figma.svg"
                                     alt="Figma"
                                     width={60}
                                     height={60}
-                                />
-                                Figma
+                                /> */}
+                                INSTC
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-sketch.svg"
                                     alt="Sketch"
                                     width={60}
                                     height={60}
-                                />
-                                Sketch
+                                /> */}
+                                TITR
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-zeplin.svg"
                                     alt="Zeplin"
                                     width={60}
                                     height={60}
-                                />
-                                Zeplin
+                                /> */}
+                                TRACECA
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-ai.svg"
                                     alt="Adobe AI"
                                     width={60}
                                     height={60}
-                                />
-                                Adobe AI
+                                /> */}
+                                CPEC
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-ps.svg"
                                     alt="Adobe PS"
                                     width={60}
                                     height={60}
-                                />
-                                Adobe PS
+                                /> */}
+                                CAREC
                             </div>
                             <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                <Image
+                                {/* <Image
                                     src="/images/icon-ae.svg"
                                     alt="Adobe AE"
                                     width={60}
                                     height={60}
-                                />
-                                Adobe AE
+                                /> */}
+                                NSR
                             </div>
                         </div>
                     </div>
@@ -474,8 +469,9 @@ export default function HomePage() {
                         className="section-heading text-center"
                         data-aos="fade-up"
                     >
-                        <h2>Projects</h2>
-                        <h3>Super-Cool Awesome Projects</h3>
+                        <h2>STRATEGIC LOGISTICS ROUTES</h2>
+                        <h3>RUSSIA → THE WORLD</h3>
+                        <h2>Connecting Russian Cargo to Global Markets</h2>
                     </div>
                     <div className="mt-10 grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 sm:grid-cols-2 sm:gap-5 lg:mt-14 lg:grid-cols-4 xl:gap-10">
                         {projectList.map((project) => {
@@ -490,7 +486,7 @@ export default function HomePage() {
                     <div className="mt-10 text-center lg:mt-14">
                         <Button type="button" asChild>
                             <Link href="/project">
-                                <span>View All Projects</span>
+                                <span>EXPLORE OUR NETWORK →</span>
                             </Link>
                         </Button>
                     </div>
@@ -517,26 +513,30 @@ export default function HomePage() {
                             <div className="section-heading" data-aos="fade-up">
                                 <h2>About Our Company</h2>
                                 <h3 className="after:left-0 after:translate-0">
-                                    Delivering Excellence, Every Step of the Way
+                                    CONNECTING RUSSIA TO INTERNATIONAL MARKETS
                                 </h3>
                             </div>
                             <p>
-                                At our company, we believe technology should
-                                drive growth, not complexity. As a
-                                forward-thinking IT services company, we
-                                specialize in delivering innovative, reliable,
-                                and scalable solutions that help businesses
-                                operate smarter, faster, and more securely.
+                                We coordinate cargo movement across strategic
+                                corridors, combining rail, sea, road, customs
+                                and documentation into one seamless logistics
+                                solution. From Russian origin to international
+                                destination, we manage the route, the cargo and
+                                the critical details that keep trade moving.
                             </p>
                             <div className="border-border divide-border font-red-hat text-primary grid max-w-125 grid-cols-1 divide-y rounded-2xl border text-lg sm:grid-cols-2">
-                                <div className="p-4">01. The Great Mission</div>
-                                <div className="p-4">02. Working with you</div>
-                                <div className="p-4">03. Best solution</div>
-                                <div className="p-4">04. Start Mission</div>
-                                <div className="p-4">05. Great Partners</div>
+                                <div className="p-4">01. MULTI-CORRIDOR</div>
+                                <div className="p-4">02. RAIL & SEA</div>
+                                <div className="p-4">03. ROAD & TRANSIT</div>
+                                <div className="p-4">
+                                    04. CUSTOMS & DOCUMENTS
+                                </div>
+                                <div className="p-4">
+                                    05. INTERNATIONAL CARGO
+                                </div>
                             </div>
                             <Link href="/contact" className={buttonVariants()}>
-                                <span>Learn More</span>
+                                <span>EXPLORE OUR NETWORK</span>
                             </Link>
                         </div>
                     </div>
@@ -551,8 +551,10 @@ export default function HomePage() {
                                 className="section-heading text-center"
                                 data-aos="fade-up"
                             >
-                                <h2>Working Steps</h2>
-                                <h3>Our Basic Work Process</h3>
+                                <h2>
+                                    Russia Connected. The World Within Reach.
+                                </h2>
+                                <h3>LOGISTICS IN MOTION</h3>
                             </div>
                             <div className="mt-10 grid grid-cols-1 gap-10 text-center sm:grid-cols-2 sm:gap-14 lg:mt-14 xl:grid-cols-4">
                                 <div className="group space-y-5 sm:space-y-8">
@@ -572,14 +574,14 @@ export default function HomePage() {
                                     </div>
                                     <div className="space-y-2">
                                         <h2 className="text-primary font-red-hat text-xl font-semibold">
-                                            Discovery & Consultation
+                                            ROUTE INTELLIGENCE
                                         </h2>
                                         <p>
-                                            We start by learning about your
-                                            business, goals, and technical
-                                            challenges. This helps us understand
-                                            what you need and how we can best
-                                            support you.
+                                            We design efficient multimodal
+                                            routes across rail, sea, road and
+                                            strategic corridors, connecting
+                                            Russian cargo with key markets
+                                            across Eurasia and beyond.
                                         </p>
                                     </div>
                                 </div>
@@ -600,13 +602,14 @@ export default function HomePage() {
                                     </div>
                                     <div className="space-y-2">
                                         <h2 className="text-primary font-red-hat text-xl font-semibold">
-                                            Planning & Requirements
+                                            CARGO & COMPLIANCE
                                         </h2>
                                         <p>
-                                            Based on your requirements, we
-                                            create a strategic plan and design
-                                            tailored solutions that align with
-                                            your objectives and future growth.
+                                            We manage customs clearance, export
+                                            documentation, certificates,
+                                            licenses and dangerous-goods
+                                            requirements to ensure every
+                                            shipment is ready for movement.
                                         </p>
                                     </div>
                                 </div>
@@ -627,14 +630,14 @@ export default function HomePage() {
                                     </div>
                                     <div className="space-y-2">
                                         <h2 className="text-primary font-red-hat text-xl font-semibold">
-                                            Development & Implement
+                                            MULTIMODAL EXECUTION
                                         </h2>
                                         <p>
-                                            Our expert team builds, configures,
-                                            or deploys the solution whether
-                                            it&apos;s software, infrastructure,
-                                            or a managed service—using industry
-                                            best practices.
+                                            We coordinate ports, terminals,
+                                            railways, road carriers and
+                                            transshipment points, turning
+                                            complex international routes into
+                                            one controlled operation.
                                         </p>
                                     </div>
                                 </div>
@@ -655,13 +658,13 @@ export default function HomePage() {
                                     </div>
                                     <div className="space-y-2">
                                         <h2 className="text-primary font-red-hat text-xl font-semibold">
-                                            Support & Optimize
+                                            CONTROL BEYOND DELIVERY
                                         </h2>
                                         <p>
-                                            After deployment, we provide ongoing
-                                            support, monitor performance, and
-                                            make continuous improvements to
-                                            ensure long-term success.
+                                            We track critical points throughout
+                                            the journey, manage operational
+                                            exceptions and keep every shipment
+                                            moving toward its final destination.
                                         </p>
                                     </div>
                                 </div>
@@ -693,41 +696,48 @@ export default function HomePage() {
                         </div>
                         <div className="grow space-y-8 md:space-y-10">
                             <div className="section-heading" data-aos="fade-up">
-                                <h2>Why Choose Us</h2>
+                                <h2>OUR CAPABILITIES</h2>
                                 <h3 className="after:left-0 after:translate-0">
-                                    Seamless Solutions for Your Digital Journey
+                                    BUILT FOR COMPLEX CARGO
                                 </h3>
                             </div>
                             <p>
-                                At Cryzion, we combine technical expertise with
-                                business insight to deliver high-impact IT
-                                solutions tailored to your goals. Our clients
-                                choose us because we offer:
+                                We handle the movements that demand more than a
+                                standard freight solution — from bulk
+                                commodities and liquid cargo to specialized
+                                equipment and regulated goods. Each shipment is
+                                approached according to its cargo, route,
+                                regulatory requirements and operational
+                                conditions.
                             </p>
                             <div className="flex flex-wrap items-center gap-5">
                                 <div className="border-border flex items-center gap-3 rounded-xl border px-4 py-2 shadow-sm">
                                     <Check className="size-5" />
-                                    <div>Easy to Use</div>
+                                    <div>BULK COMMODITIES</div>
                                 </div>
                                 <div className="border-border flex items-center gap-3 rounded-xl border px-4 py-2 shadow-sm">
                                     <Check className="size-5" />
-                                    <div>Affordable Pricing</div>
+                                    <div>LIQUID CARGO</div>
                                 </div>
                                 <div className="border-border flex items-center gap-3 rounded-xl border px-4 py-2 shadow-sm">
                                     <Check className="size-5" />
-                                    <div>Customized Solutions</div>
+                                    <div>SPECIALIZED EQUIPMENT</div>
                                 </div>
                                 <div className="border-border flex items-center gap-3 rounded-xl border px-4 py-2 shadow-sm">
                                     <Check className="size-5" />
-                                    <div>Cutting-Edge Technology</div>
+                                    <div>DANGEROUS GOODS</div>
                                 </div>
                                 <div className="border-border flex items-center gap-3 rounded-xl border px-4 py-2 shadow-sm">
                                     <Check className="size-5" />
-                                    <div>24/7 Support</div>
+                                    <div>CROSS-BORDER TRADE</div>
+                                </div>
+                                <div className="border-border flex items-center gap-3 rounded-xl border px-4 py-2 shadow-sm">
+                                    <Check className="size-5" />
+                                    <div>PROJECT CARGO</div>
                                 </div>
                             </div>
                             <Link href="/contact" className={buttonVariants()}>
-                                <span>Contact Us</span>
+                                <span>REQUEST A CARGO SOLUTION</span>
                             </Link>
                         </div>
                     </div>

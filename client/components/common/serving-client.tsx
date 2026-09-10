@@ -1,17 +1,28 @@
 import { cn } from '@/lib/utils'
 import {
     Activity,
+    BadgeCheck,
     BadgeDollarSign,
     Blocks,
+    Boxes,
     Briefcase,
     Bubbles,
     Calendar,
+    Container,
+    FileText,
     Gem,
     MapPinHouse,
     Mic,
+    Package,
+    PackageOpen,
     Plug2,
     Popcorn,
+    Ship,
     Tractor,
+    TrainFront,
+    TriangleAlert,
+    Truck,
+    Warehouse,
 } from 'lucide-react'
 import React from 'react'
 
@@ -22,20 +33,20 @@ export default function ServingClient({
     className?: string
     variant?: 'light' | 'dark'
 }) {
-    const IconServices = [
-        { icon: Mic, label: 'Publishing' },
-        { icon: BadgeDollarSign, label: 'Finance' },
-        { icon: Activity, label: 'Sciences' },
-        { icon: Briefcase, label: 'Consultant' },
-        { icon: Popcorn, label: 'Food' },
-        { icon: MapPinHouse, label: 'Travel' },
-        { icon: Bubbles, label: 'Dairy' },
-        { icon: Gem, label: 'Jewellery' },
-        { icon: Plug2, label: 'Energy' },
-        { icon: Tractor, label: 'Farming' },
-        { icon: Blocks, label: 'Industries' },
-        { icon: Calendar, label: 'Events' },
-    ]
+   const IconServices = [
+  { icon: Truck, label: "LOGISTICS" },
+  { icon: TrainFront, label: "RAIL" },
+  { icon: Ship, label: "MARITIME" },
+  { icon: Truck, label: "ROAD" },
+  { icon: Warehouse, label: "CUSTOMS" },
+  { icon: FileText, label: "DOCUMENTS" },
+  { icon: TriangleAlert, label: "DANGEROUS" },
+  { icon: BadgeCheck, label: "CERTIFICATION" },
+  { icon: PackageOpen, label: "BULK" },
+  { icon: Container, label: "ISOTANK" },
+  { icon: Boxes, label: "INTERMODAL" },
+  { icon: Package, label: "CARGO" },
+];
 
     const isDark = variant === 'dark'
     return (
@@ -48,9 +59,9 @@ export default function ServingClient({
                     )}
                     data-aos="fade-up"
                 >
-                    <h2>Your Industry, Our Insight</h2>
+                    <h2>Connecting Russia to Global Markets</h2>
                     <h3 className={cn(isDark && 'after:bg-white')}>
-                        Serving our clients across the diverse industries.
+                        Our Logistics Services
                     </h3>
                 </div>
                 <div

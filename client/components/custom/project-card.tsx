@@ -8,6 +8,7 @@ type Project = {
     id: number | string
     title: string
     description: string
+    description2?: string
     image: string
     url: string
     category?: string
@@ -33,6 +34,9 @@ export default function ProjectCard({ project }: { project: Project }) {
                 <p className="line-clamp-2 text-sm md:text-base">
                     {project.description}
                 </p>
+                <p className="line-clamp-2 text-sm md:text-base font-bold">
+                    {project.description2}
+                </p>
             </div>
 
             <Button type="button" variant={'secondary'} asChild>
@@ -41,7 +45,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     className="absolute! inset-x-4! bottom-4 z-10 duration-300 group-hover:bottom-4 sm:-bottom-full"
                     aria-label="View Project Details"
                 >
-                    <span>View Project</span>
+                    <span>EXPLORE OUR NETWORK →</span>
                 </Link>
             </Button>
         </div>
