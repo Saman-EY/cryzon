@@ -14,26 +14,25 @@ const Footer = () => {
                                     <div className="font-red-hat text-primary space-y-2 text-3xl">
                                         <div>Ready To</div>
                                         <div className="font-bold">
-                                            Work With Us?
+                                            MOVE WITH US?
                                         </div>
                                     </div>
                                     <p>
-                                        We turn innovation into success with our
-                                        expertise, passion, and commitment to
-                                        excellence.
+                                        Connecting cargo, corridors and markets
+                                        through reliable multimodal logistics.
                                     </p>
                                     <Button type="button" asChild>
                                         <NavLink
                                             href="/contact"
                                             className="shadow-3xl! w-fit"
                                         >
-                                            <span>Get a Quote</span>
+                                            <span>GET A QUOTE</span>
                                         </NavLink>
                                     </Button>
                                 </div>
                                 <div className="shrink-0 space-y-6 sm:space-y-8">
                                     <h2 className="text-primary font-red-hat after:bg-primary relative inline-flex pb-3 text-2xl font-bold after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/3">
-                                        Our Services
+                                        OUR SERVICES
                                     </h2>
                                     <div className="space-y-1">
                                         <NavLink
@@ -41,50 +40,71 @@ const Footer = () => {
                                             className="footer-link"
                                         >
                                             <ChevronsRight className="size-4" />
-                                            Managed IT Services
+                                            Multimodal Logistics
                                         </NavLink>
                                         <NavLink
                                             href="/services/service-details"
                                             className="footer-link"
                                         >
                                             <ChevronsRight className="size-4" />
-                                            System Integration
+                                            Rail Freight
                                         </NavLink>
                                         <NavLink
                                             href="/services/service-details"
                                             className="footer-link"
                                         >
                                             <ChevronsRight className="size-4" />
-                                            AI & Automation Services
+                                            Maritime Transport
                                         </NavLink>
                                         <NavLink
                                             href="/services/service-details"
                                             className="footer-link"
                                         >
                                             <ChevronsRight className="size-4" />
-                                            Cloud Services
+                                            Road Transportation
                                         </NavLink>
                                         <NavLink
                                             href="/services/service-details"
                                             className="footer-link"
                                         >
                                             <ChevronsRight className="size-4" />
-                                            Software Development
+                                            ISO Tank & Bulk Cargo
                                         </NavLink>
                                         <NavLink
                                             href="/services/service-details"
                                             className="footer-link"
                                         >
                                             <ChevronsRight className="size-4" />
-                                            End-to-End Support
+                                            Customs & Documentation
                                         </NavLink>
                                     </div>
                                 </div>
                                 <div className="shrink-0 space-y-6 sm:space-y-8">
                                     <h2 className="text-primary font-red-hat after:bg-primary relative inline-flex pb-3 text-2xl font-bold after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/3">
-                                        Pages
+                                        PAGES
                                     </h2>
                                     <div className="space-y-1">
+                                        <NavLink
+                                            href="/about-us"
+                                            className="footer-link"
+                                        >
+                                            <ChevronsRight className="size-4" />
+                                            About Us
+                                        </NavLink>
+                                        <NavLink
+                                            href="/services"
+                                            className="footer-link"
+                                        >
+                                            <ChevronsRight className="size-4" />
+                                            Logistics Services
+                                        </NavLink>
+                                        <NavLink
+                                            href="/transport-corridors"
+                                            className="footer-link"
+                                        >
+                                            <ChevronsRight className="size-4" />
+                                            Transport Corridors
+                                        </NavLink>
                                         <NavLink
                                             href="/project"
                                             className="footer-link"
@@ -93,45 +113,24 @@ const Footer = () => {
                                             Projects
                                         </NavLink>
                                         <NavLink
-                                            href="/services"
+                                            href="/industries"
                                             className="footer-link"
                                         >
                                             <ChevronsRight className="size-4" />
-                                            Services
+                                            Industries
                                         </NavLink>
                                         <NavLink
-                                            href="/blog"
+                                            href="/contact"
                                             className="footer-link"
                                         >
                                             <ChevronsRight className="size-4" />
-                                            Blog
-                                        </NavLink>
-                                        <NavLink
-                                            href="/terms-conditions"
-                                            className="footer-link"
-                                        >
-                                            <ChevronsRight className="size-4" />
-                                            Terms & Conditions
-                                        </NavLink>
-                                        <NavLink
-                                            href="/privacy-policy"
-                                            className="footer-link"
-                                        >
-                                            <ChevronsRight className="size-4" />
-                                            Privacy Policy
-                                        </NavLink>
-                                        <NavLink
-                                            href="/cookie-policy"
-                                            className="footer-link"
-                                        >
-                                            <ChevronsRight className="size-4" />
-                                            Cookie Policy
+                                            Contact
                                         </NavLink>
                                     </div>
                                 </div>
                                 <div className="space-y-8">
                                     <h2 className="text-primary font-red-hat after:bg-primary relative inline-flex pb-3 text-2xl font-bold after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/3">
-                                        Contact Us
+                                        CONTACT US
                                     </h2>
                                     <div className="grid max-w-125 gap-8 lg:gap-10 2xl:grid-cols-2">
                                         <div className="flex items-center gap-4">
@@ -151,13 +150,13 @@ const Footer = () => {
                                             </Button>
                                             <div className="space-y-1">
                                                 <div className="text-sm">
-                                                    Call Us 24/7
+                                                    Call Us
                                                 </div>
                                                 <NavLink
                                                     href="tel:+44 151 222 3344"
                                                     className="text-primary font-semibold transition hover:opacity-80"
                                                 >
-                                                    +44 151 222 3344
+                                                    +7 XXX XXX XXXX
                                                 </NavLink>
                                             </div>
                                         </div>
@@ -186,8 +185,7 @@ const Footer = () => {
                                                     target="_blank"
                                                     className="text-primary font-semibold transition hover:opacity-80"
                                                 >
-                                                    XYZ Hilton Street, 125 Town
-                                                    United State
+                                                    Moscow, Russia
                                                 </NavLink>
                                             </div>
                                         </div>
@@ -198,7 +196,7 @@ const Footer = () => {
                                                 variant={'secondary'}
                                             >
                                                 <NavLink
-                                                    href="mailto:support@example.com"
+                                                    href="mailto:info@yourcompany.com"
                                                     className="size-12 !bg-white !p-0"
                                                 >
                                                     <span>
@@ -211,10 +209,10 @@ const Footer = () => {
                                                     Work with us
                                                 </div>
                                                 <NavLink
-                                                    href="mailto:support@example.com"
+                                                    href="mailto:info@yourcompany.com"
                                                     className="text-primary font-semibold transition hover:opacity-80"
                                                 >
-                                                    support@example.com
+                                                    info@yourcompany.com
                                                 </NavLink>
                                             </div>
                                         </div>
@@ -227,13 +225,13 @@ const Footer = () => {
                 <div className="container">
                     <div className="text-primary flex flex-col-reverse items-center justify-between gap-4 py-5 text-sm sm:flex-row">
                         <div>
-                            <NavLink
+                            {/* <NavLink
                                 href="/"
                                 className="transition hover:opacity-80"
                             >
                                 Cryzion
                             </NavLink>
-                            &nbsp;- Copyright&nbsp;
+                            &nbsp;- Copyright&nbsp; */}
                             <span>{currYear}</span>. All rights reserved.
                         </div>
                         <div className="flex items-center gap-6">

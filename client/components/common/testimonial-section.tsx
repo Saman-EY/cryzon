@@ -16,6 +16,12 @@ const testiMonials = [
         position: 'CEO, BlueNova Digital',
         review: '“It’s rare to find a tech partner that combines technical expertise with such clear communication and dedication. Highly recommend them.”',
         logo: '/images/partner-logo1.svg',
+        list: [
+            'RUSSIA → IRAN',
+            'ISO TANK TRANSIT',
+            'Liquid Bulk • Chemical Cargo • Multimodal Transport',
+            'RAIL + ROAD',
+        ],
     },
     {
         id: 2,
@@ -24,6 +30,12 @@ const testiMonials = [
         position: 'COO, MedSys Solutions',
         review: '“From planning to execution, their strategic approach made a real difference. Our operations are more efficient, and our data is more secure than ever.”',
         logo: '/images/partner-logo4.svg',
+        list: [
+            'RUSSIA → IRAN',
+            'ISO TANK TRANSIT',
+            'Liquid Bulk • Chemical Cargo • Multimodal Transport',
+            'RAIL + ROAD',
+        ],
     },
     {
         id: 3,
@@ -32,6 +44,12 @@ const testiMonials = [
         position: 'IT Manager, Global Logistics',
         review: '“Their technical support is top-notch. Whether it’s server issues or cybersecurity concerns, they’re always available and incredibly efficient.”',
         logo: '/images/partner-logo3.svg',
+        list: [
+            'RUSSIA → IRAN',
+            'ISO TANK TRANSIT',
+            'Liquid Bulk • Chemical Cargo • Multimodal Transport',
+            'RAIL + ROAD',
+        ],
     },
     {
         id: 4,
@@ -40,6 +58,12 @@ const testiMonials = [
         position: 'Product Manager, FinTechCorp',
         review: '“Cryzion helped us streamline our IT infrastructure and migrate to the cloud with zero downtime. Their team was responsive, knowledgeable, and genuinely invested in our success.”',
         logo: '/images/partner-logo2.svg',
+        list: [
+            'RUSSIA → IRAN',
+            'ISO TANK TRANSIT',
+            'Liquid Bulk • Chemical Cargo • Multimodal Transport',
+            'RAIL + ROAD',
+        ],
     },
 ]
 
@@ -66,17 +90,17 @@ export default function TestimonialSection({
                             )}
                             data-aos="fade-up"
                         >
-                            <h2>Our Testimonial</h2>
+                            <h2>From Russian Origins to Global Destinations</h2>
                             <h3
                                 className={cn(
                                     'md:after:left-0 md:after:translate-0',
                                     isDark ? 'after:bg-white' : '',
                                 )}
                             >
-                                Our Client Reviews
+                                SELECTED OPERATIONS
                             </h3>
                         </div>
-                        <div
+                        {/* <div
                             className={cn(
                                 'flex max-w-75 items-start gap-15 text-center',
                                 isDark ? 'text-white' : 'text-primary',
@@ -116,7 +140,7 @@ export default function TestimonialSection({
                                 </div>
                                 <div>2,488 Rating</div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -149,24 +173,11 @@ export default function TestimonialSection({
                                 className="!h-auto sm:h-full"
                             >
                                 <div className="border-border flex h-full flex-col space-y-6 rounded-xl border bg-white px-4 py-6 shadow sm:space-y-8 sm:p-10">
-                                    <div className="flex items-center gap-5 lg:gap-8">
-                                        <div className="bg-gray-light size-20 overflow-hidden rounded-full">
-                                            <Image
-                                                src={testimonial.image}
-                                                alt="Client"
-                                                width={80}
-                                                height={80}
-                                                className="h-full w-full object-cover"
-                                            />
-                                        </div>
-                                        <div className="space-y-1">
-                                            <div className="text-primary font-red-hat text-xl font-bold">
-                                                {testimonial.name}
-                                            </div>
-                                            <div>{testimonial.position}</div>
-                                        </div>
-                                    </div>
-                                    <p className="grow">{testimonial.review}</p>
+                                    <ul className='text-lg font-semibold'>
+                                        {testimonial.list.map((item, idx) => (
+                                            <li key={idx}>{item}</li>
+                                        ))}
+                                    </ul>
                                     <div className="border-border mt-auto flex items-center justify-between gap-5 border-t pt-6 sm:pt-8">
                                         <Image
                                             src={testimonial.logo}

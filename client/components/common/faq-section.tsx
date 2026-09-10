@@ -24,26 +24,27 @@ export default function FaqSection({ faqList }: { faqList: FaqItem[] }) {
                         className="section-heading text-center lg:text-left"
                         data-aos="fade-up"
                     >
-                        <h2>FAQs</h2>
+                        <h2>FAQ</h2>
                         <h3 className="lg:after:left-0 lg:after:translate-0">
-                            Your questions answered simply here
+                            Logistics Questions, Clearly Answered
                         </h3>
                     </div>
                     <div className="hidden space-y-6 rounded-2xl bg-white px-4 py-6 shadow-sm sm:p-10 lg:inline-block">
                         <h2 className="text-primary font-red-hat text-xl font-semibold md:text-2xl">
-                            Still have you any question?
+                            STILL HAVE A SHIPMENT TO MOVE?
                         </h2>
                         <p>
-                            We&apos;re ready to help you to answer any
-                            questions.
+                            Tell us your cargo, origin and destination. We’ll
+                            help determine the right route and logistics
+                            solution.
                         </p>
-                        <Link
-                            href="tel:+01 487 124 653"
+                        <span
+                            // href="tel:+01 487 124 653"
                             className="text-primary inline-flex gap-3 font-bold transition hover:opacity-80"
                         >
                             <PhoneCall />
-                            +01 487 124 653
-                        </Link>
+                            REQUEST A LOGISTICS QUOTE
+                        </span>
                     </div>
                 </div>
                 <Accordion type="single" collapsible className="space-y-4">

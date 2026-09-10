@@ -13,8 +13,8 @@ export default function PricingPlanSection() {
                 className="section-heading aos-init aos-animate text-center"
                 data-aos="fade-up"
             >
-                <h2>Pricing Plans</h2>
-                <h3>Explore Our Flexible Pricing Plans</h3>
+                <h2>TRANSPORT SOLUTIONS</h2>
+                <h3>Move Cargo. Choose the Right Route</h3>
             </div>
             <div className="mx-auto mt-10 max-w-7xl lg:mt-14">
                 <div className="bg-gray-light relative z-1 mx-auto mb-6 flex w-max gap-2.5 rounded-xl p-2">
@@ -94,6 +94,104 @@ export default function PricingPlanSection() {
                                 </span>
                             </Button>
                         </div>
+                        <div className="border-border relative border-2 px-6 pt-12 pb-8 2xl:px-8">
+                            <Image
+                                src="/images/square.jpg"
+                                alt="square"
+                                width={401}
+                                height={268}
+                                className="absolute inset-x-0 bottom-0 -z-1 object-contain opacity-80"
+                            />
+                            <div className="border-border absolute -top-6.75 -left-2 mb-0 h-20 w-10.5 rotate-45 border-r-2 bg-white"></div>
+
+                            <div>
+                                <h4 className="mb-6 flex gap-0.5 text-4xl font-semibold text-black">
+                                    BULK & BAGGED CARGO
+                                </h4>
+                            </div>
+                            <span className="bg-primary my-6 block h-0.5 w-1/2 lg:my-8"></span>
+                            <div>
+                                <h5 className="mb-3 text-lg/5 font-medium text-black">
+                                    Service Include:
+                                </h5>
+                                <ul className="mb-5 space-y-1 pl-2 [&>li]:flex [&>li]:gap-1.5">
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        GRAIN & AGRICULTURAL PRODUCTS
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        JUMBO BAGS & FIBC
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        HOPPER CARGO
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        FERTILIZERS & RAW MATERIALS
+                                    </li>
+                                </ul>
+                            </div>
+                            <Button
+                                type="button"
+                                className="hover:shadow-3xl! w-full"
+                            >
+                                <span>
+                                    EXPLORE ALL SERVICES
+                                    <ChevronsRight />
+                                </span>
+                            </Button>
+                        </div>
+                        <div className="border-border relative border-2 px-6 pt-12 pb-8 2xl:px-8">
+                            <Image
+                                src="/images/square.jpg"
+                                alt="square"
+                                width={401}
+                                height={268}
+                                className="absolute inset-x-0 bottom-0 -z-1 object-contain opacity-80"
+                            />
+                            <div className="border-border absolute -top-6.75 -left-2 mb-0 h-20 w-10.5 rotate-45 border-r-2 bg-white"></div>
+
+                            <div>
+                                <h4 className="mb-6 flex gap-0.5 text-4xl font-semibold text-black">
+                                    DANGEROUS & SPECIAL CARGO
+                                </h4>
+                            </div>
+                            <span className="bg-primary my-6 block h-0.5 w-1/2 lg:my-8"></span>
+                            <div>
+                                <h5 className="mb-3 text-lg/5 font-medium text-black">
+                                    Service Include:
+                                </h5>
+                                <ul className="mb-5 space-y-1 pl-2 [&>li]:flex [&>li]:gap-1.5">
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        CHEMICALS & HAZARDOUS GOODS
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        PETROLEUM PRODUCTS
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        ISO TANK CONTAINERS
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        SPECIAL & REGULATED CARGO
+                                    </li>
+                                </ul>
+                            </div>
+                            <Button
+                                type="button"
+                                className="hover:shadow-3xl! w-full"
+                            >
+                                <span>
+                                    EXPLORE ALL SERVICES
+                                    <ChevronsRight />
+                                </span>
+                            </Button>
+                        </div>
                     </div>
                 )}
 
@@ -110,30 +208,11 @@ export default function PricingPlanSection() {
                             <div className="border-border absolute -top-6.75 -left-2 mb-0 h-20 w-10.5 rotate-45 border-r-2 bg-white"></div>
 
                             <div>
-                                <span className="text-primary font-red-hat mb-4 block text-xl font-bold">
-                                    Basic
-                                </span>
-                                <h4 className="mb-6 flex gap-0.5 text-[56px]/14 font-semibold text-black">
-                                    <span className="text-gray text-xl font-medium">
-                                        $
-                                    </span>
-                                    1800
-                                    <span className="text-gray mt-auto text-xl font-medium">
-                                        /year
-                                    </span>
+                                <h4 className="mb-6 flex gap-0.5 text-4xl font-semibold text-black">
+                                    LIQUID BULK
                                 </h4>
-                                <p>
-                                    Save
-                                    <span className="font-medium text-black">
-                                        20% offer
-                                    </span>
-                                    of consulting
-                                    <span className="font-medium text-black">
-                                        93K clients.
-                                    </span>
-                                </p>
                             </div>
-                            <span className="bg-primary h0.51 my-6 block w-1/2 lg:my-8"></span>
+                            <span className="bg-primary my-6 block h-0.5 w-1/2 lg:my-8"></span>
                             <div>
                                 <h5 className="mb-3 text-lg/5 font-medium text-black">
                                     Service Include:
@@ -141,23 +220,19 @@ export default function PricingPlanSection() {
                                 <ul className="mb-5 space-y-1 pl-2 [&>li]:flex [&>li]:gap-1.5">
                                     <li>
                                         <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
-                                        Business Solution
+                                        EDIBLE & INDUSTRIAL OILS
                                     </li>
                                     <li>
                                         <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
-                                        24/7 Consultant Service
+                                        CHEMICALS & LIQUID PRODUCTS
                                     </li>
                                     <li>
                                         <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
-                                        Great Customer Support
+                                        PETROLEUM PRODUCTS
                                     </li>
                                     <li>
-                                        <BadgeCheck className="mt-1 size-4!" />
-                                        Market Growth Solution
-                                    </li>
-                                    <li>
-                                        <BadgeCheck className="mt-1 size-4!" />
-                                        24/7 Consultant Service
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        ISO TANK CONTAINERS
                                     </li>
                                 </ul>
                             </div>
@@ -166,12 +241,109 @@ export default function PricingPlanSection() {
                                 className="hover:shadow-3xl! w-full"
                             >
                                 <span>
-                                    Purchase Now
+                                    EXPLORE ALL SERVICES
                                     <ChevronsRight />
                                 </span>
                             </Button>
                         </div>
-                        
+                        <div className="border-border relative border-2 px-6 pt-12 pb-8 2xl:px-8">
+                            <Image
+                                src="/images/square.jpg"
+                                alt="square"
+                                width={401}
+                                height={268}
+                                className="absolute inset-x-0 bottom-0 -z-1 object-contain opacity-80"
+                            />
+                            <div className="border-border absolute -top-6.75 -left-2 mb-0 h-20 w-10.5 rotate-45 border-r-2 bg-white"></div>
+
+                            <div>
+                                <h4 className="mb-6 flex gap-0.5 text-4xl font-semibold text-black">
+                                    DRY BULK
+                                </h4>
+                            </div>
+                            <span className="bg-primary my-6 block h-0.5 w-1/2 lg:my-8"></span>
+                            <div>
+                                <h5 className="mb-3 text-lg/5 font-medium text-black">
+                                    Service Include:
+                                </h5>
+                                <ul className="mb-5 space-y-1 pl-2 [&>li]:flex [&>li]:gap-1.5">
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        GRAIN & AGRICULTURAL COMMODITIES
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        CORN & SOY
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        MINERALS & RAW MATERIALS
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        BULK CARGO
+                                    </li>
+                                </ul>
+                            </div>
+                            <Button
+                                type="button"
+                                className="hover:shadow-3xl! w-full"
+                            >
+                                <span>
+                                    EXPLORE ALL SERVICES
+                                    <ChevronsRight />
+                                </span>
+                            </Button>
+                        </div>
+                        <div className="border-border relative border-2 px-6 pt-12 pb-8 2xl:px-8">
+                            <Image
+                                src="/images/square.jpg"
+                                alt="square"
+                                width={401}
+                                height={268}
+                                className="absolute inset-x-0 bottom-0 -z-1 object-contain opacity-80"
+                            />
+                            <div className="border-border absolute -top-6.75 -left-2 mb-0 h-20 w-10.5 rotate-45 border-r-2 bg-white"></div>
+
+                            <div>
+                                <h4 className="mb-6 flex gap-0.5 text-4xl font-semibold text-black">
+                                    CONTAINER & PROJECT CARGO
+                                </h4>
+                            </div>
+                            <span className="bg-primary my-6 block h-0.5 w-1/2 lg:my-8"></span>
+                            <div>
+                                <h5 className="mb-3 text-lg/5 font-medium text-black">
+                                    Service Include:
+                                </h5>
+                                <ul className="mb-5 space-y-1 pl-2 [&>li]:flex [&>li]:gap-1.5">
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        FCL & CONTAINERIZED CARGO
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        GENERAL & PALLETIZED CARGO
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        HEAVY & OVERSIZED CARGO
+                                    </li>
+                                    <li>
+                                        <BadgeCheck className="fill-gray mt-1 size-4! [&>path:nth-child(2)]:text-white" />
+                                        PROJECT CARGO
+                                    </li>
+                                </ul>
+                            </div>
+                            <Button
+                                type="button"
+                                className="hover:shadow-3xl! w-full"
+                            >
+                                <span>
+                                    EXPLORE ALL SERVICES
+                                    <ChevronsRight />
+                                </span>
+                            </Button>
+                        </div>
                     </div>
                 )}
             </div>

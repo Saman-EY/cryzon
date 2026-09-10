@@ -104,38 +104,37 @@ export default function HomePage() {
             url: '/project/project-details',
         },
     ]
-
     const faqList = [
         {
             id: 1,
-            question: 'What is the purpose of this project?',
-            answer: 'The primary objective is to achieve operational efficiency and business growth by implementing modern solutions tailored to our organizational goals.',
+            question: 'What transport options are available for my cargo?',
+            answer: 'We provide rail, road, sea and multimodal transport solutions for general, bulk, liquid, chemical, dangerous and specialized cargo.',
         },
         {
             id: 2,
-            question: 'What is the expected timeline for project completion?',
-            answer: 'The project is scheduled to start on [Start Date] and is expected to be completed by [End Date], depending on milestone approvals and testing phases.',
+            question: 'Which corridor is best for my shipment?',
+            answer: 'We assess the cargo, origin, destination, border requirements and transit conditions to select the most efficient available corridor.',
         },
         {
             id: 3,
-            question: 'How is the project being managed?',
-            answer: 'We are using Agile/Waterfall/Hybrid methodology supported by project management tools such as Jira, Microsoft Project, or Asana, ensuring transparency and timely updates.',
+            question: 'Can you handle dangerous and regulated cargo?',
+            answer: 'Yes. We coordinate the required documentation and compliance procedures for dangerous goods, chemicals, petroleum products and other regulated cargo.',
         },
         {
             id: 4,
-            question: 'How will progress be communicated?',
-            answer: 'Regular updates will be provided through weekly meetings, email summaries, and real-time dashboards accessible via the project management tool.',
+            question: 'What customs documents and export permits are required?',
+            answer: 'Requirements depend on the cargo and destination. We coordinate customs documentation, export certificates, permits and regulatory formalities required for the shipment.',
         },
         {
             id: 5,
-            question:
-                'Will employees receive training on new systems or tools?',
-            answer: 'Yes. Comprehensive training sessions, user guides, and support resources will be provided to ensure smooth adoption and minimal disruption.',
+            question: 'Can you combine rail, road and sea transport?',
+            answer: 'Yes. We organize multimodal transport by combining rail, road and sea routes to create a continuous logistics chain from origin to destination.',
         },
         {
             id: 6,
-            question: 'How can I share feedback or raise a concern?',
-            answer: 'You can use the feedback form available on the project portal or contact the Project Manager directly via email or during scheduled check-ins.',
+            question:
+                'Can you handle cargo through Russian ports and gateways?',
+            answer: 'Yes. We coordinate cargo movement through key Russian maritime, rail and border gateways, connecting Russian origins with international markets.',
         },
     ]
     return (
