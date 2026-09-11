@@ -37,77 +37,79 @@ export default function Service() {
     const services = [
         {
             id: 1,
-            title: 'IT Consulting',
+            title: 'RAIL FREIGHT',
             description:
-                'Strategic guidance to align technology with your business goals. Improve efficiency, reduce costs, and scale effectively.',
+                'Cross-border rail logistics for containerized, bulk and specialized cargo, with coordinated wagon, platform and terminal operations across regional and international rail networks.',
             image: '/images/quick-solutions.png',
         },
         {
             id: 2,
-            title: 'Cybersecurity Solutions',
+            title: 'MARITIME TRANSPORT',
             description:
-                'Protect your business from threats with advanced security audits, firewall setup, threat detection, and data protection strategies.',
+                'Port-to-port and multimodal sea logistics through Russian and international ports, connecting vessels, terminals, railways and road transport within one coordinated movement.',
             image: '/images/icon-cybersecurity.png',
         },
         {
             id: 3,
-            title: 'Cloud Services',
+            title: 'ROAD TRANSPORT',
             description:
-                'Cloud migration, management, and optimization using platforms like AWS, Azure, and Google Cloud.',
+                'Cross-border trucking and regional distribution for general, bulk and specialized cargo, including coordinated border crossings, transshipment and last-mile delivery.',
             image: '/images/cloud-computing.png',
         },
         {
             id: 4,
-            title: 'Software Development',
+            title: 'MULTIMODAL CORRIDORS',
             description:
-                'Custom software and app development tailored to your business processes, from planning to deployment.',
+                'End-to-end routing across rail, road and sea, designed around the most efficient combination of borders, ports, terminals and transit corridors for each cargo flow.',
             image: '/images/icon-software.png',
         },
         {
             id: 5,
-            title: 'Managed IT Services',
+            title: 'ISO TANK & LIQUID CARGO',
             description:
-                'Comprehensive 24/7 IT support, maintenance, and monitoring to ensure optimal system performance and uptime.',
+                'Specialized logistics for liquid commodities using ISO tank containers, tank wagons and compatible transport equipment, including positioning, repositioning and multimodal transfer.',
             image: '/images/icon-mangement.png',
         },
         {
             id: 6,
-            title: 'System Integration',
+            title: 'BULK & BAGGED CARGO',
             description:
-                'Seamlessly connect software, hardware, and third-party platforms to create a unified IT ecosystem.',
+                'Handling and transportation of dry bulk, agricultural commodities, fertilizers and bagged cargo using hopper wagons, FIBC and jumbo bags, with coordinated loading and discharge operations.',
             image: '/images/icon-integration.png',
         },
         {
             id: 7,
-            title: 'AI & Automation Services',
+            title: 'DANGEROUS GOODS',
             description:
-                'Leverage artificial intelligence and robotic process automation (RPA) to boost productivity and reduce manual tasks.',
+                'Controlled logistics for hazardous and regulated cargo, including chemicals, petroleum products and other classified goods, with transport documentation, regulatory coordination and specialized equipment.',
             image: '/images/icon-ai.png',
         },
         {
             id: 8,
-            title: 'End-to-End Support',
+            title: 'CUSTOMS & TRANSIT DOCUMENTATION',
             description:
-                'We provide personalized services solutions that drive impact, streamline operations, and deliver real results.',
+                'Coordination of customs, transit and cargo documentation across international movements, including declarations, permits, certificates, transit procedures and regulatory requirements.',
             image: '/images/icon-support.png',
         },
     ]
+
     return (
         <>
             <div className="mb-16 grow space-y-16 lg:mb-25 lg:space-y-25">
                 <HeroSection
                     breadcrumbs={[
                         { label: 'Home', href: '/' },
-                        { label: 'Service' },
+                        { label: 'Services' },
                     ]}
                     title={
                         <>
-                            Smart Solutions. <br />
-                            <span>Proven Results.</span>
+                            MULTIMODAL LOGISTICS.
+                            <br />
+                            <span>CORRIDOR-DRIVEN EXECUTION.</span>
                         </>
                     }
                     description={
-                        'We provide personalized services solutions that drive impact, streamline operations, and deliver real results.'
+                        'Integrated cargo solutions across rail, maritime and road networks, connecting Russian ports, inland terminals and international trade corridors.'
                     }
                 />
                 <LatestService services={services} />
@@ -117,23 +119,20 @@ export default function Service() {
                         <div className="border-border/10 grid items-center border-b text-white sm:grid-cols-2 sm:gap-0 sm:pb-8 lg:grid-cols-3 lg:gap-16">
                             <div className="border-border/10 relative order-2 py-6 sm:p-8 lg:order-none lg:border-r">
                                 <h3 className="text-lg/5">
-                                    Experienced IT Professionals
+                                    MULTIMODAL OPERATIONS
                                 </h3>
                                 <div
                                     className="mt-8"
                                     x-data="{ count: 0 }"
                                     x-init="let target = 10; let interval = setInterval(() => { if (count < target) count += 1; else clearInterval(interval) }, 20)"
                                 >
-                                    <Counter
-                                        target={10}
-                                        interval={200}
-                                        step={1}
-                                        suffix="+"
-                                        className="font-red-hat text-5xl font-semibold sm:text-6xl"
-                                    ></Counter>
+                                    <span>Rail + Road + Sea</span>
 
                                     <p className="mt-1">
-                                        years of industry experience
+                                        Integrated transport planning across
+                                        multiple modes, with coordinated
+                                        transfers between ports, rail terminals,
+                                        border crossings and final destinations.
                                     </p>
                                 </div>
                                 <Image
@@ -148,28 +147,27 @@ export default function Service() {
                                 className="section-heading order-1 mb-12 text-center sm:col-span-2 lg:order-none lg:col-span-1 lg:mb-0"
                                 data-aos="fade-up"
                             >
-                                <h2 className="text-white">Our Approach</h2>
-                                <h3 className="text-white after:bg-white">
-                                    Why Businesses Trust Us
+                                <h2 className="text-sm text-white/50">
+                                    BUILT AROUND THE CARGO. CONNECTED BY THE
+                                    CORRIDOR.
+                                </h2>
+                                <h3 className="text-2xl text-white after:bg-white">
+                                    OUR OPERATING MODEL
                                 </h3>
                             </div>
                             <div className="border-border/10 relative order-3 border-t py-6 sm:border-t-0 sm:border-l sm:p-8 lg:order-none">
-                                <h3 className="text-lg/5">
-                                    Projects delivered by our team
-                                </h3>
                                 <div
                                     className="mt-8"
                                     x-data="{ count: 0 }"
                                     x-init="let target = 400; let interval = setInterval(() => { if (count < target) count += 3; else clearInterval(interval) }, 1)"
                                 >
-                                    <Counter
-                                        target={400}
-                                        interval={1}
-                                        step={1}
-                                        suffix="+"
-                                        className="font-red-hat text-5xl font-semibold sm:text-6xl"
-                                    ></Counter>
-                                    <p className="mt-1">projects delivered</p>
+                                    <p className="mt-1">
+                                        We coordinate cargo movements across
+                                        rail, road and maritime networks,
+                                        combining routing, equipment, border
+                                        procedures, terminals and documentation
+                                        into one controlled logistics flow.
+                                    </p>
                                 </div>
                                 <Image
                                     src="/images/team-icon.png"
@@ -179,35 +177,85 @@ export default function Service() {
                                     className="animate-customPulse absolute top-5 right-5 h-20"
                                 />
                             </div>
+
+                            <div className="border-border/10 relative order-2 py-6 sm:p-8 lg:order-none lg:border-r">
+                                <h3 className="text-lg/5">
+                                    CROSS-BORDER EXECUTION
+                                </h3>
+                                <div
+                                    className="mt-8"
+                                    x-data="{ count: 0 }"
+                                    x-init="let target = 10; let interval = setInterval(() => { if (count < target) count += 1; else clearInterval(interval) }, 20)"
+                                >
+                                    <span>Multiple Corridors</span>
+
+                                    <p className="mt-1">
+                                        Route planning through established
+                                        international corridors, connecting
+                                        Russia with the Caucasus, Central Asia,
+                                        the Caspian region, Europe and the
+                                        Middle East.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="border-border/10 relative order-2 py-6 sm:p-8 lg:order-none lg:border-r">
+                                <h3 className="text-lg/5">
+                                    EQUIPMENT & HANDLING
+                                </h3>
+                                <div
+                                    className="mt-8"
+                                    x-data="{ count: 0 }"
+                                    x-init="let target = 10; let interval = setInterval(() => { if (count < target) count += 1; else clearInterval(interval) }, 20)"
+                                >
+                                    <span>
+                                        ISO Tanks • Hopper Wagons • Platforms
+                                    </span>
+
+                                    <p className="mt-1">
+                                        Equipment positioning, loading
+                                        coordination, terminal handling and
+                                        multimodal transfers for specialized and
+                                        bulk cargo flows.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="border-border/10 relative order-2 py-6 sm:p-8 lg:order-none lg:border-r">
+                                <h3 className="text-lg/5">
+                                    CONTROLLED AT EVERY TRANSFER
+                                </h3>
+                                <div
+                                    className="mt-8"
+                                    x-data="{ count: 0 }"
+                                    x-init="let target = 10; let interval = setInterval(() => { if (count < target) count += 1; else clearInterval(interval) }, 20)"
+                                >
+                                    <p className="mt-1">
+                                        From the first loading point to the
+                                        final delivery, each movement is
+                                        coordinated around cargo requirements,
+                                        route conditions, border procedures,
+                                        equipment availability and applicable
+                                        transport regulations.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div className="grid text-white sm:grid-cols-2 lg:grid-cols-4 lg:pt-8">
                             <div className="border-border/10 relative order-2 border-b py-6 sm:border-r sm:border-b-0 sm:p-8 lg:order-none lg:border-r-0">
                                 <div className="section-heading mb-6">
                                     <h3 className="text-2xl/7 font-medium text-white after:left-0 after:-translate-x-0 after:bg-white/60">
-                                        Our Certifications
+                                        OUR CORE CAPABILITIES
                                     </h3>
                                 </div>
                                 <ul className="text-gray-light/90 space-y-1.5">
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        Microsoft Certified Professionals
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        AWS Certified
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        CompTIA Certified
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        Cisco Certified
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        Certified Information Systems Security
-                                    </li>
+                                    {items1.map((item, index) => (
+                                        <li
+                                            key={index}
+                                            className="flex items-start gap-2.5"
+                                        >
+                                            <Award className="mt-1 size-4! shrink-0" />
+                                            {item}
+                                        </li>
+                                    ))}
                                 </ul>
                                 <Image
                                     src="/images/certificate-icon.png"
@@ -227,64 +275,37 @@ export default function Service() {
                                 />
                                 <div className="section-heading mb-6">
                                     <h3 className="text-2xl/7 font-medium text-white after:left-0 after:-translate-x-0 after:bg-white/60">
-                                        Our Core Values
+                                        CORRIDOR COVERAGE
                                     </h3>
                                 </div>
                                 <ul className="text-gray-light/90 space-y-1.5">
-                                    <li className="flex items-start gap-2.5">
-                                        <CheckCheck className="mt-1 size-4! shrink-0" />
-                                        We are committed to delivering
-                                        high-quality work.
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <CheckCheck className="mt-1 size-4! shrink-0" />
-                                        We are dedicated to our clients and
-                                        their success.
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <CheckCheck className="mt-1 size-4! shrink-0" />
-                                        We are passionate about our work and
-                                        strive to exceed expectations.
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <CheckCheck className="mt-1 size-4! shrink-0" />
-                                        We are innovative and always looking for
-                                        new ways to improve our services.
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <CheckCheck className="mt-1 size-4! shrink-0" />
-                                        We are transparent and honest in our
-                                        dealings with clients.
-                                    </li>
+                                    {items2.map((item, index) => (
+                                        <li
+                                            key={index}
+                                            className="flex items-start gap-2.5"
+                                        >
+                                            <CheckCheck className="mt-1 size-4! shrink-0" />
+                                            {item}
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                             <div className="relative order-3 py-6 sm:p-8 lg:order-none">
                                 <div className="section-heading mb-6">
                                     <h3 className="text-2xl/7 font-medium text-white after:left-0 after:-translate-x-0 after:bg-white/60">
-                                        Compliance Expertise
+                                        OPERATIONAL SCOPE
                                     </h3>
                                 </div>
                                 <ul className="text-gray-light/90 space-y-1.5">
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        HIPAA
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        GDPR
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        SOC 2 Type I & II
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        ISO/IEC 27001
-                                    </li>
-                                    <li className="flex items-start gap-2.5">
-                                        <Award className="mt-1 size-4! shrink-0" />
-                                        PCI-DSS
-                                    </li>
+                                    {items3.map((item, index) => (
+                                        <li
+                                            key={index}
+                                            className="flex items-start gap-2.5"
+                                        >
+                                            <Award className="mt-1 size-4! shrink-0" />
+                                            {item}
+                                        </li>
+                                    ))}
                                 </ul>
                                 <Image
                                     src="/images/certificate-icon.png"
@@ -339,3 +360,32 @@ export default function Service() {
         </>
     )
 }
+
+const items1 = [
+    'Rail freight and wagon coordination',
+    'Maritime and port-to-port logistics',
+    'Cross-border road transportation',
+    'Multimodal corridor planning',
+    'ISO tank and liquid bulk logistics',
+    'Hopper wagon and dry bulk operations',
+    'Dangerous goods transportation',
+    'Customs and transit documentation',
+    'Cargo permits and regulatory coordination',
+    'Port, terminal and border operations',
+]
+const items2 = [
+    'RUSSIA',
+    'CAUCASUS',
+    'CENTRAL ASIA',
+    'CASPIAN REGION',
+    'EUROPE',
+    'MIDDLE EAST',
+]
+const items3 = [
+    'ORIGIN',
+    'PORT',
+    'BORDER',
+    'RAIL / ROAD',
+    'TRANSIT HUB',
+    'DESTINATION',
+]

@@ -1,4 +1,4 @@
-@import 'aos/dist/aos.css';
+/* @import 'aos/dist/aos.css'; */
 
 @import 'tailwindcss';
 
@@ -172,6 +172,10 @@
 
 .animate-marquee {
     animation: marquee 30s linear infinite;
+}
+
+.LogoSwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
 }
 
 @keyframes marquee {

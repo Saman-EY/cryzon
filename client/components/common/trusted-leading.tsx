@@ -20,11 +20,11 @@ export default function TrustedLeading() {
                 <div className="container flex flex-col items-center justify-around gap-5 text-white lg:flex-row">
                     <div className="text-center lg:text-left">
                         <h2 className="font-red-hat mb-2 text-3xl leading-tight font-semibold drop-shadow-xl lg:mb-4 lg:text-5xl">
-                            Trusted by Leading Businesses Worldwide.
+                            CONNECTING RUSSIA TO INTERNATIONAL MARKETS
                         </h2>
                         <p className="lg:text-lg/6">
-                            Connect with our business consultants about how we
-                            can support your growth.
+                            Seamless logistics across rail, road, sea and
+                            strategic international corridors.
                         </p>
                     </div>
                     <button

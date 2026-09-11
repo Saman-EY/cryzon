@@ -22,8 +22,8 @@ export default function LatestService({
     return (
         <div className="container">
             <div className="section-heading text-center" data-aos="fade-up">
-                <h2>Our Latest Services</h2>
-                <h3>Service We Provide</h3>
+                <h2>OUR LOGISTICS SERVICES</h2>
+                <h3>From Origin to Final Destination</h3>
             </div>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3 lg:gap-10 xl:grid-cols-4">
                 {services.map((service) => {

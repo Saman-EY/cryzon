@@ -11,6 +11,7 @@ import helper from '@/lib/helper'
 import Counter from '@/components/custom/counter'
 import PricingPlanSection from '@/components/custom/pricing-plan-section'
 import { Button, buttonVariants } from '@/components/ui/button'
+import LogoAnimate from '@/components/common/logo-animate'
 
 export const metadata: Metadata = {
     title: 'Home | Cryzion',
@@ -460,6 +461,8 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
+
+                <LogoAnimate />
 
                 <LatestService services={services} viewAllButton />
 
