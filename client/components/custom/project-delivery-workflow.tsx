@@ -16,9 +16,9 @@ export default function ProjectDeliveryWorkflow() {
                         className="section-heading text-center"
                         data-aos="fade-up"
                     >
-                        <h2 className="text-white">Our Approach</h2>
+                        <h2 className="text-white">OUR OPERATING MODEL</h2>
                         <h3 className="text-white after:bg-white">
-                            Project Delivery Workflow
+                            CORRIDOR-LED LOGISTICS
                         </h3>
                     </div>
                     <div className="border-border/10 relative mt-12 flex flex-col items-center gap-6 border-b pb-12 text-white lg:mt-16 lg:flex-row lg:gap-16 lg:pb-0">
@@ -29,7 +29,15 @@ export default function ProjectDeliveryWorkflow() {
                                     01
                                 </span>
                                 <ChevronsRight className="size-3.5! shrink-0" />
-                                <p>Discovery & Requirement</p>
+                                <div className="flex flex-col gap-1">
+                                    <p>ROUTE ENGINEERING</p>
+                                    <p>
+                                        Corridor selection based on cargo
+                                        profile, border crossings, port access,
+                                        transit restrictions and final
+                                        destination.
+                                    </p>
+                                </div>
                                 <span className="absolute top-1/2 -right-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
                             <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mx-auto">
@@ -37,7 +45,15 @@ export default function ProjectDeliveryWorkflow() {
                                     02
                                 </span>
                                 <ChevronsRight className="size-3.5! shrink-0" />
-                                <p>Planning & Strategy</p>
+                                <div className="flex flex-col gap-1">
+                                    <p>CARGO & EQUIPMENT</p>
+                                    <p>
+                                        Matching each shipment with the right
+                                        equipment, including ISO Tank
+                                        Containers, hopper wagons, platforms,
+                                        containers and specialized vehicles.
+                                    </p>
+                                </div>
                                 <span className="absolute top-1/2 -right-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
                             <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:ml-auto">
@@ -45,7 +61,14 @@ export default function ProjectDeliveryWorkflow() {
                                     03
                                 </span>
                                 <ChevronsRight className="size-3.5! shrink-0" />
-                                <p>Design & Development</p>
+                                <div className="flex flex-col gap-1">
+                                    <p>DOCUMENTATION & CUSTOMS</p>
+                                    <p>
+                                        Coordinating transit documents, customs
+                                        procedures, cargo release, permits and
+                                        cross-border requirements.
+                                    </p>
+                                </div>
                                 <span className="absolute top-1/2 -right-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
                         </div>
@@ -64,7 +87,15 @@ export default function ProjectDeliveryWorkflow() {
                                     04
                                 </span>
                                 <ChevronsRight className="size-3.5! shrink-0" />
-                                <p>Testing & Quality Assurance</p>
+                                <div className="flex flex-col gap-1">
+                                    <p>MULTIMODAL EXECUTION</p>
+                                    <p>
+                                        Coordinating rail, road and sea legs as
+                                        one continuous movement, with controlled
+                                        transfers between transport modes and
+                                        terminals.
+                                    </p>
+                                </div>
                                 <span className="absolute top-1/2 -left-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
                             <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mx-auto">
@@ -72,7 +103,15 @@ export default function ProjectDeliveryWorkflow() {
                                     05
                                 </span>
                                 <ChevronsRight className="size-3.5! shrink-0" />
-                                <p>Deployment</p>
+                                <div className="flex flex-col gap-1">
+                                    <p>BORDER & TERMINAL COORDINATION</p>
+                                    <p>
+                                        Managing handovers at border crossings,
+                                        ports, railway terminals and
+                                        transshipment points to maintain cargo
+                                        continuity.
+                                    </p>
+                                </div>
                                 <span className="absolute top-1/2 -left-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
                             <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mr-auto">
@@ -80,7 +119,15 @@ export default function ProjectDeliveryWorkflow() {
                                     06
                                 </span>
                                 <ChevronsRight className="size-3.5! shrink-0" />
-                                <p>Support & Optimization</p>
+                                <div className="flex flex-col gap-1">
+                                    <p>DELIVERY CONTROL</p>
+                                    <p>
+                                        Tracking operational milestones from
+                                        origin to destination, coordinating
+                                        carriers and resolving route-level
+                                        issues throughout the shipment.
+                                    </p>
+                                </div>
                                 <span className="absolute top-1/2 -left-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
                         </div>
@@ -88,11 +135,10 @@ export default function ProjectDeliveryWorkflow() {
 
                     <div className="mx-auto w-full max-w-222 pt-8 text-center text-white lg:pt-12">
                         <p>
-                            At our core, we believe every successful project
-                            starts with a structured approach. Our project
-                            delivery workflow is designed to guarantee
-                            efficiency, transparency, and exceptional results —
-                            every time.
+                            Every shipment is planned as a complete logistics
+                            chain — from origin and equipment allocation to
+                            border clearance, multimodal transfer and final
+                            delivery.
                         </p>
                         <div className="mt-5">
                             <Button

@@ -32,83 +32,284 @@ export const metadata: Metadata = {
 export default function Projects() {
     const categories = [
         'All',
-        'Software Development',
-        'Cloud Migration',
-        'Cybersecurity',
-        'Automation',
-        'Process Optimization',
+        'INTERNATIONAL NORTH–SOUTH TRANSPORT CORRIDOR (INSTC)',
+        'TRANS-CASPIAN INTERNATIONAL TRANSPORT ROUTE',
+        'NORTHERN EURASIAN CORRIDOR',
+        'CENTRAL ASIAN TRANSPORT CORRIDORS',
+        'CAUCASUS–TÜRKİYE CORRIDOR',
     ]
     const projects = [
         {
             id: 1,
-            title: 'ERP Integration for Retail',
-            description:
-                'Implemented SAP ERP to streamline operations across multiple departments.',
+            title: 'RUSSIA → AZERBAIJAN → IRAN',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'Direct overland routing connecting Russian cargo with Iranian terminals and onward regional markets.',
             image: '/images/project3.jpg',
-            category: 'Software Development',
+            category: 'INTERNATIONAL NORTH–SOUTH TRANSPORT CORRIDOR (INSTC)',
             url: '/project/project-details',
         },
         {
             id: 2,
-            title: 'Digital Commerce Platform',
-            description:
-                'Launched an eCommerce platform integrated with inventory and CRM tools.',
+            title: 'RUSSIA → CASPIAN SEA → IRAN',
+            description: 'Sea • Rail • Multimodal',
+            description2:
+                'Caspian feeder connections combining maritime and rail transport for efficient north–south cargo movement.',
             image: '/images/project4.jpg',
-            category: 'Cybersecurity',
+            category: 'INTERNATIONAL NORTH–SOUTH TRANSPORT CORRIDOR (INSTC)',
             url: '/project/project-details',
         },
         {
             id: 3,
-            title: 'Automation for Manufacturing',
-            description: 'Deployed RPA bots for invoice and order processing.',
+            title: 'IRAN → GULF STATES',
+            description: 'Road • Sea • Multimodal',
+            description2:
+                'Integrated routing from Iranian gateways to major Gulf ports and distribution markets.',
             image: '/images/project5.jpg',
-            category: 'Automation',
+            category: 'INTERNATIONAL NORTH–SOUTH TRANSPORT CORRIDOR (INSTC)',
             url: '/project/project-details',
         },
         {
             id: 4,
-            title: 'CRM Implementation for Finance Sector',
-            description:
-                'Designed and implemented a CRM system tailored for financial services.',
-            image: '/images/project6.jpg',
-            category: 'Software Development',
+            title: 'RUSSIA → IRAN → INDIA',
+            description: 'Rail • Sea • Road • Multimodal',
+            description2:
+                'A strategic north–south connection linking Russian cargo with Indian markets through Iranian transit infrastructure.',
+            image: '/images/project5.jpg',
+            category: 'INTERNATIONAL NORTH–SOUTH TRANSPORT CORRIDOR (INSTC)',
             url: '/project/project-details',
         },
         {
             id: 5,
-            title: 'Cloud Migration Strategy',
-            description: 'Migrated critical systems to AWS with zero downtime.',
-            image: '/images/blog2.jpg',
-            category: 'Cloud Migration',
+            title: 'BULK & CONTAINERIZED CARGO',
+            description:
+                'Grain • Fertilizers • Chemicals • Industrial Goods • Containers',
+            description2:
+                'Handling structured cargo flows across multiple transport modes and border points.',
+            image: '/images/project6.jpg',
+            category: 'INTERNATIONAL NORTH–SOUTH TRANSPORT CORRIDOR (INSTC)',
             url: '/project/project-details',
         },
+
         {
             id: 6,
-            title: 'Business Process Optimization',
-            description:
-                'Reengineered supply chain workflows to reduce overhead by 30%.',
-            image: '/images/blog3.jpg',
-            category: 'Process Optimization',
+            title: 'RUSSIA → CASPIAN SEA → AZERBAIJAN',
+            description: 'Rail • Sea • Multimodal',
+            description2:
+                'A coordinated Caspian crossing connecting Russian rail networks with Azerbaijan’s western transport routes.',
+            image: '/images/blog2.jpg',
+            category: 'TRANS-CASPIAN INTERNATIONAL TRANSPORT ROUTE',
             url: '/project/project-details',
         },
         {
             id: 7,
-            title: 'AI-Powered Customer Support Bot',
-            description:
-                'Integrated a multilingual AI chatbot to enhance customer support.',
-            image: '/images/blog4.jpg',
-            category: 'Automation',
+            title: 'KAZAKHSTAN → CASPIAN SEA → AZERBAIJAN',
+            description: 'Rail • Sea • Multimodal',
+            description2:
+                'Multimodal access from Central Asia through Caspian ports into the South Caucasus.',
+            image: '/images/blog3.jpg',
+            category: 'TRANS-CASPIAN INTERNATIONAL TRANSPORT ROUTE',
             url: '/project/project-details',
         },
         {
             id: 8,
-            title: 'Multi-Market Expansion Strategy',
-            description:
-                'Developed entry strategies for 4 new global markets in the healthcare sector.',
-            image: '/images/blog5.jpg',
-            category: 'Process Optimization',
+            title: 'AZERBAIJAN → GEORGIA → TÜRKİYE',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'Overland connectivity across the Caucasus toward Türkiye and onward European destinations.',
+            image: '/images/blog4.jpg',
+            category: 'TRANS-CASPIAN INTERNATIONAL TRANSPORT ROUTE',
             url: '/project/project-details',
         },
+        {
+            id: 9,
+            title: 'TÜRKİYE → EUROPE',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'Integrated land connections supporting cargo movement from Türkiye into European markets.',
+            image: '/images/blog5.jpg',
+            category: 'TRANS-CASPIAN INTERNATIONAL TRANSPORT ROUTE',
+            url: '/project/project-details',
+        },
+        {
+            id: 10,
+            title: 'CONTAINERIZED & GENERAL CARGO',
+            description:
+                'Containers • Machinery • Industrial Goods • Commercial Cargo Flexible handling for containerized, project and general cargo moving across the corridor.',
+            image: '/images/blog2.jpg',
+            category: 'TRANS-CASPIAN INTERNATIONAL TRANSPORT ROUTE',
+            url: '/project/project-details',
+        },
+
+        {
+            id: 11,
+            title: 'CHINA → KAZAKHSTAN → RUSSIA',
+            description: 'Rail • Multimodal',
+            description2:
+                'Rail-based east–west connectivity for structured cargo flows entering the Russian transport network.',
+            image: '/images/project6.jpg',
+            category: 'NORTHERN EURASIAN CORRIDOR',
+            url: '/project/project-details',
+        },
+        {
+            id: 12,
+            title: 'CHINA → RUSSIA',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'Direct multimodal solutions for cargo moving between Chinese production centers and Russian markets.',
+            image: '/images/project5.jpg',
+            category: 'NORTHERN EURASIAN CORRIDOR',
+            url: '/project/project-details',
+        },
+        {
+            id: 13,
+            title: 'RUSSIA → BELARUS → EUROPE',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'Western routing through Belarus connecting Russian cargo with European-facing logistics networks.',
+            image: '/images/project4.jpg',
+            category: 'NORTHERN EURASIAN CORRIDOR',
+            url: '/project/project-details',
+        },
+        {
+            id: 14,
+            title: 'CONTAINERIZED CARGO',
+            description: 'FCL • Industrial Cargo • Machinery • Consumer Goods',
+            description2:
+                'Container solutions designed for predictable long-distance movement and intermodal transfers.',
+            image: '/images/project3.jpg',
+            category: 'NORTHERN EURASIAN CORRIDOR',
+            url: '/project/project-details',
+        },
+
+        {
+            id: 15,
+            title: 'RUSSIA → KAZAKHSTAN',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'A primary regional connection for Russian cargo entering Central Asian distribution networks.',
+            image: '/images/project3.jpg',
+            category: 'CENTRAL ASIAN TRANSPORT CORRIDORS',
+            url: '/project/project-details',
+        },
+
+        {
+            id: 16,
+            title: 'KAZAKHSTAN → UZBEKISTAN',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'Reliable southbound routing connecting Kazakhstan with Uzbekistan and regional trade hubs.',
+            image: '/images/project4.jpg',
+            category: 'CENTRAL ASIAN TRANSPORT CORRIDORS',
+            url: '/project/project-details',
+        },
+        {
+            id: 17,
+            title: 'CENTRAL ASIA → AFGHANISTAN',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'Controlled multimodal routing for cargo moving toward Afghan border and inland markets.',
+            image: '/images/project5.jpg',
+            category: 'CENTRAL ASIAN TRANSPORT CORRIDORS',
+            url: '/project/project-details',
+        },
+        {
+            id: 18,
+            title: 'BULK & BAGGED CARGO',
+            description:
+                'Grain • Agricultural Products • Fertilizers • Jumbo Bags',
+            description2:
+                'Specialized handling of dry bulk and bagged commodities across regional supply chains.',
+            image: '/images/project6.jpg',
+            category: 'CENTRAL ASIAN TRANSPORT CORRIDORS',
+            url: '/project/project-details',
+        },
+        {
+            id: 19,
+            title: 'INDUSTRIAL & COMMERCIAL CARGO',
+            description: 'Machinery • Raw Materials • General Cargo',
+            description2:
+                'Transport solutions for industrial inputs, equipment and commercial shipments.',
+            image: '/images/project5.jpg',
+            category: 'CENTRAL ASIAN TRANSPORT CORRIDORS',
+            url: '/project/project-details',
+        },
+        {
+            id: 20,
+            title: 'RUSSIA → CASPIAN SEA → AZERBAIJAN',
+            description: 'Sea • Rail • Multimodal',
+            description2:
+                'Caspian connectivity linking Russian cargo with Azerbaijan and the Trans-Caucasus network.',
+            image: '/images/project3.jpg',
+            category: 'CAUCASUS–TÜRKİYE CORRIDOR',
+            url: '/project/project-details',
+        },
+        {
+            id: 20,
+            title: 'AZERBAIJAN → GEORGIA',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'A key Caucasus connection supporting continuous cargo movement between the Caspian and Black Sea regions.',
+            image: '/images/project4.jpg',
+            category: 'CAUCASUS–TÜRKİYE CORRIDOR',
+            url: '/project/project-details',
+        },
+        {
+            id: 21,
+            title: 'GEORGIA → TÜRKİYE',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'Cross-border routing connecting Georgian logistics nodes with Türkiye’s transport infrastructure.',
+            image: '/images/project5.jpg',
+            category: 'CAUCASUS–TÜRKİYE CORRIDOR',
+            url: '/project/project-details',
+        },
+        {
+            id: 22,
+            title: 'TÜRKİYE → EUROPE',
+            description: 'Rail • Road • Multimodal',
+            description2:
+                'A strategic westbound connection for cargo entering European markets through Türkiye.',
+            image: '/images/project6.jpg',
+            category: 'CAUCASUS–TÜRKİYE CORRIDOR',
+            url: '/project/project-details',
+        },
+        {
+            id: 23,
+            title: 'SPECIALIZED CARGO',
+            description:
+                'ISO Tanks • Chemicals • Bulk Cargo • Industrial Goods',
+            description2:
+                'Dedicated logistics for controlled, liquid, bulk and specialized industrial shipments.',
+            image: '/images/project3.jpg',
+            category: 'CAUCASUS–TÜRKİYE CORRIDOR',
+            url: '/project/project-details',
+        },
+
+        // {
+        //     image: '/images/project3.jpg',
+        // },
+        // {
+        //     image: '/images/project4.jpg',
+        // },
+        // {
+        //     image: '/images/project5.jpg',
+        // },
+        // {
+        //     image: '/images/project6.jpg',
+        // },
+        // {
+        //     image: '/images/blog2.jpg',
+        // },
+        // {
+        //     image: '/images/blog3.jpg',
+        // },
+        // {
+        //     image: '/images/blog4.jpg',
+        // },
+        // {
+        //     image: '/images/blog5.jpg',
+        // },
     ]
     return (
         <>
@@ -120,13 +321,11 @@ export default function Projects() {
                     ]}
                     title={
                         <>
-                            Our Projects, <br />
-                            <span>Your Success.</span>
+                            TRADE ROUTES IN MOTION, <br />
+                            <span className="text-lg">RUSSIA → THE WORLD</span>
                         </>
                     }
-                    description={
-                        'Discover how we’ve helped businesses streamline operations, embrace digital transformation, and achieve sustained growth - across industries and geographies.'
-                    }
+                    description={'Connecting Russian Cargo to Global Markets'}
                     descriptionClassName="w-full max-w-200"
                 />
 
