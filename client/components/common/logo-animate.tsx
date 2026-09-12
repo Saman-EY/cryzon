@@ -242,4 +242,24 @@ const logos = [
         name: 'EAST–WEST',
         image: '',
     },
+    {
+        name: 'RUSSIA',
+        image: '',
+    },
+    {
+        name: 'CENTRAL ASIA ',
+        image: '',
+    },
+    {
+        name: 'CASPIAN',
+        image: '',
+    },
+    {
+        name: 'NORTH–SOUTH',
+        image: '',
+    },
+    {
+        name: 'EAST–WEST',
+        image: '',
+    },
 ]

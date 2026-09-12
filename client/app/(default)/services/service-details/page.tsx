@@ -84,59 +84,123 @@ export default function ServiceDetails() {
                         { label: 'Service', href: '/services' },
                         { label: 'Service details' },
                     ]}
-                    title={<>Business Strategy</>}
-                    description={
-                        'We provide personalized services solutions that drive impact, streamline operations, and deliver real results.'
+                    title={
+                        <div>
+                            <p>SERVICE DETAILS</p>
+                            {/* <p className="text-xl">
+                                From Cargo Specification to Final Delivery
+                            </p> */}
+                        </div>
                     }
+                    description={'MULTIMODAL FREIGHT OPERATIONS'}
                 />
                 <div className="container flex flex-col items-start gap-12 lg:flex-row lg:gap-16">
                     <div className="grow">
                         <div className="prose prose-base lg:prose-lg lg:prose-h2:text-4xl prose-h2:first:mt-0 max-w-full">
-                            <h2>
-                                Empowering Your Business to Thrive in a Dynamic
-                                World
-                            </h2>
+                            <h2>From Cargo Specification to Final Delivery</h2>
                             <p>
-                                We provide innovative, scalable, and tailored
-                                business solutions designed to streamline
-                                operations, boost efficiency, and drive growth.
-                                Our services are trusted by startups, SMEs, and
-                                large enterprises seeking strategic and
-                                operational excellence.
+                                A shipment is not defined by one transport mode.
+                                It is defined by its cargo, route, equipment,
+                                border requirements and final destination.
                             </p>
                             <p>
-                                We combine industry expertise with innovative
-                                approaches to help you navigate complex business
-                                landscapes and gain competitive advantage.
+                                We structure each movement around these
+                                operational parameters and connect the required
+                                rail, road, maritime, customs and terminal
+                                operations into one coordinated flow.
                             </p>
-                            <ol type="1">
-                                <li>
-                                    <h3>Business Process Optimization</h3>
-                                    <p>
-                                        We help eliminate inefficiencies and
-                                        reduce costs while maintaining quality
-                                        and compliance.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h3>Strategy & Consulting</h3>
-                                    <p>
-                                        Leverage our expert consultants to
-                                        define clear roadmaps, identify growth
-                                        opportunities, and align your strategy
-                                        with measurable goals.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h3>Managed Services</h3>
-                                    <p>
-                                        Focus on your core business while we
-                                        manage your back-end systems, support
-                                        desks, network services, and more - all
-                                        under SLAs tailored to your needs.
-                                    </p>
-                                </li>
-                            </ol>
+
+                            <section className="flex gap-5">
+                                <div>
+                                    <h6 className="text-3xl font-bold!">
+                                        EQUIPMENT
+                                    </h6>
+                                    <ol
+                                        className="flex flex-col gap-0!"
+                                        type="1"
+                                    >
+                                        <li className="m-0! p-0!">
+                                            <h3 className="m-0!">
+                                                ISO TANK CONTAINERS
+                                            </h3>
+                                            <p>
+                                                For liquid bulk, chemicals and
+                                                regulated cargo.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>HOPPER WAGONS</h3>
+                                            <p>
+                                                For grain, fertilizers and dry
+                                                bulk commodities.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>PLATFORM WAGONS</h3>
+                                            <p>
+                                                For containers, machinery, steel
+                                                and heavy cargo.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>CONTAINERS</h3>
+                                            <p>
+                                                For general, commercial and
+                                                industrial shipments.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>SPECIALIZED VEHICLES</h3>
+                                            <p>
+                                                For road legs, border transfers
+                                                and final delivery.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <div>
+                                    <h6 className="text-3xl font-bold!">
+                                        CARGO PROFILE
+                                    </h6>
+                                    <ol
+                                        className="flex flex-col gap-0!"
+                                        type="1"
+                                    >
+                                        <li className="m-0! p-0!">
+                                            <h3 className="m-0!">
+                                                GENERAL CARGO
+                                            </h3>
+                                            <p>
+                                                Containerized • Palletized •
+                                                Industrial • Commercial
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>BULK CARGO</h3>
+                                            <p>
+                                                Grain • Fertilizers • Minerals •
+                                                Raw Materials
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>LIQUID CARGO</h3>
+                                            <p>
+                                                Edible Oils • Chemicals •
+                                                Petroleum Products
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>SPECIAL CARGO</h3>
+                                            <p>
+                                                Dangerous Goods • ISO Tanks •
+                                                Oversized • Regulated Cargo
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </section>
+
                             <Image
                                 src="/images/service-img.jpg"
                                 alt="Service img"
@@ -251,43 +315,50 @@ export default function ServiceDetails() {
                     <div className="ml-auto shrink-0 space-y-8 lg:w-90">
                         <div className="bg-gray-light space-y-6 p-6">
                             <h2 className="font-red-hat after:bg-primary relative pb-2 text-2xl font-semibold text-black after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/4">
-                                Recent services
+                                ROUTE CONFIGURATION
                             </h2>
-                            <div className="-ml-1 space-y-4">
+                            <div className="-ml-1 flex flex-col space-y-4">
                                 <Link
                                     href="/services/service-details"
                                     className="inline-flex items-start gap-2 text-lg/6 text-black transition hover:opacity-80"
                                 >
                                     <ChevronsRight className="mt-0.75 size-5! shrink-0 stroke-[1.5px]!" />
-                                    Project Management
+                                    ORIGIN
                                 </Link>
                                 <Link
                                     href="/services/service-details"
                                     className="inline-flex items-start gap-2 text-lg/6 text-black transition hover:opacity-80"
                                 >
                                     <ChevronsRight className="mt-0.75 size-5! shrink-0 stroke-[1.5px]!" />
-                                    Digital Transformation
+                                    FIRST MILE
                                 </Link>
                                 <Link
                                     href="/services/service-details"
                                     className="inline-flex items-start gap-2 text-lg/6 text-black transition hover:opacity-80"
                                 >
                                     <ChevronsRight className="mt-0.75 size-5! shrink-0 stroke-[1.5px]!" />
-                                    Enterprise Resource Planning
+                                    BORDER / PORT
                                 </Link>
                                 <Link
                                     href="/services/service-details"
                                     className="inline-flex items-start gap-2 text-lg/6 text-black transition hover:opacity-80"
                                 >
                                     <ChevronsRight className="mt-0.75 size-5! shrink-0 stroke-[1.5px]!" />
-                                    Market Research & Business Analysis
+                                    TRANSIT CORRIDOR
                                 </Link>
                                 <Link
                                     href="/services/service-details"
                                     className="inline-flex items-start gap-2 text-lg/6 text-black transition hover:opacity-80"
                                 >
                                     <ChevronsRight className="mt-0.75 size-5! shrink-0 stroke-[1.5px]!" />
-                                    End-to-End Support
+                                    TERMINAL
+                                </Link>
+                                <Link
+                                    href="/services/service-details"
+                                    className="inline-flex items-start gap-2 text-lg/6 text-black transition hover:opacity-80"
+                                >
+                                    <ChevronsRight className="mt-0.75 size-5! shrink-0 stroke-[1.5px]!" />
+                                    FINAL DESTINATION
                                 </Link>
                             </div>
                         </div>
