@@ -24,7 +24,7 @@ export default function ProjectDeliveryWorkflow() {
                     <div className="border-border/10 relative mt-12 flex flex-col items-center gap-6 border-b pb-12 text-white lg:mt-16 lg:flex-row lg:gap-16 lg:pb-0">
                         <span className="absolute inset-y-0 left-1/2 h-full w-px -translate-x-1/5 bg-white/50 lg:hidden"></span>
                         <div className="relative flex grow flex-col gap-6 lg:gap-14 lg:pt-18 lg:pb-14">
-                            <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:ml-auto">
+                            <div className="border-border/50 bg-primary relative flex min-w-78 md:max-w-90 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:ml-auto">
                                 <span className="shrink-0 text-sm/4 font-extrabold">
                                     01
                                 </span>
@@ -40,7 +40,7 @@ export default function ProjectDeliveryWorkflow() {
                                 </div>
                                 <span className="absolute top-1/2 -right-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
-                            <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mx-auto">
+                            <div className="border-border/50 bg-primary relative flex min-w-78 md:max-w-90 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mx-auto">
                                 <span className="shrink-0 text-sm/4 font-extrabold">
                                     02
                                 </span>
@@ -56,7 +56,7 @@ export default function ProjectDeliveryWorkflow() {
                                 </div>
                                 <span className="absolute top-1/2 -right-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
-                            <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:ml-auto">
+                            <div className="border-border/50 bg-primary relative flex min-w-78 md:max-w-90 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:ml-auto">
                                 <span className="shrink-0 text-sm/4 font-extrabold">
                                     03
                                 </span>
@@ -72,7 +72,7 @@ export default function ProjectDeliveryWorkflow() {
                                 <span className="absolute top-1/2 -right-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
                         </div>
-                        <div className="clip-shape relative z-1 order-3 mt-auto h-72 w-full overflow-hidden lg:order-none lg:h-100 lg:w-80">
+                        <div className="clip-shape relative z-1 order-3 mt-auto h-72 w-full overflow-hidden lg:order-none lg:h-170 lg:w-90">
                             <Image
                                 src="/images/our-evolution.jpg"
                                 alt="grid"
@@ -82,7 +82,7 @@ export default function ProjectDeliveryWorkflow() {
                             />
                         </div>
                         <div className="order-2 flex grow flex-col gap-6 lg:order-none lg:gap-14 lg:pt-18 lg:pb-14">
-                            <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mr-auto">
+                            <div className="border-border/50 bg-primary relative flex min-w-78 md:max-w-90 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mr-auto">
                                 <span className="shrink-0 text-sm/4 font-extrabold">
                                     04
                                 </span>
@@ -98,7 +98,7 @@ export default function ProjectDeliveryWorkflow() {
                                 </div>
                                 <span className="absolute top-1/2 -left-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
-                            <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mx-auto">
+                            <div className="border-border/50 bg-primary relative flex min-w-78 md:max-w-90 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mx-auto">
                                 <span className="shrink-0 text-sm/4 font-extrabold">
                                     05
                                 </span>
@@ -114,7 +114,7 @@ export default function ProjectDeliveryWorkflow() {
                                 </div>
                                 <span className="absolute top-1/2 -left-full hidden h-px w-full -translate-y-1/2 border-t border-white lg:block"></span>
                             </div>
-                            <div className="border-border/50 bg-primary relative flex min-w-78 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mr-auto">
+                            <div className="border-border/50 bg-primary relative flex min-w-78 md:max-w-90 items-center gap-2 border px-3 py-3 sm:gap-4 sm:px-4 lg:mr-auto">
                                 <span className="shrink-0 text-sm/4 font-extrabold">
                                     06
                                 </span>
