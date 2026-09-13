@@ -34,44 +34,44 @@ export default function ServiceDetails() {
     const services = [
         {
             id: 1,
-            title: 'IT Consulting',
+            title: 'CARGO',
             description:
-                'Strategic guidance to align technology with your business goals. Improve efficiency, reduce costs, and scale effectively.',
+                'Cargo specifications determine the transport and equipment requirements.',
             image: '/images/quick-solutions.png',
         },
         {
             id: 2,
-            title: 'Cybersecurity Solutions',
+            title: 'ROUTE',
             description:
-                'Protect your business from threats with advanced security audits, firewall setup, threat detection, and data protection strategies.',
+                'The corridor is selected according to geography, borders, ports and transit conditions.',
             image: '/images/icon-cybersecurity.png',
         },
         {
             id: 3,
-            title: 'Cloud Services',
+            title: 'EQUIPMENT',
             description:
-                'Cloud migration, management, and optimization using platforms like AWS, Azure, and Google Cloud.',
+                'Equipment is matched to the physical and regulatory characteristics of the cargo.',
             image: '/images/cloud-computing.png',
         },
         {
             id: 4,
-            title: 'Software Development',
+            title: 'DOCUMENTS',
             description:
-                'Custom software and app development tailored to your business processes, from planning to deployment.',
+                'Customs, transit, transport and cargo-specific documentation is coordinated.',
             image: '/images/icon-software.png',
         },
         {
             id: 5,
-            title: 'Managed IT Services',
+            title: 'TRANSFER',
             description:
-                'Comprehensive 24/7 IT support, maintenance, and monitoring to ensure optimal system performance and uptime.',
+                'Each handover between rail, road, sea and terminal operations is planned in advance.',
             image: '/images/icon-mangement.png',
         },
         {
             id: 6,
-            title: 'System Integration',
+            title: 'DELIVERY',
             description:
-                'Seamlessly connect software, hardware, and third-party platforms to create a unified IT ecosystem.',
+                'The movement remains coordinated through the final delivery point.',
             image: '/images/icon-integration.png',
         },
     ]
@@ -110,7 +110,7 @@ export default function ServiceDetails() {
                                 operations into one coordinated flow.
                             </p>
 
-                            <section className="flex gap-5">
+                            <section className="flex flex-col gap-5 md:flex-row">
                                 <div>
                                     <h6 className="text-3xl font-bold!">
                                         EQUIPMENT
@@ -201,6 +201,103 @@ export default function ServiceDetails() {
                                 </div>
                             </section>
 
+                            <section className="flex flex-col gap-5 md:flex-row">
+                                <div>
+                                    <h6 className="text-3xl font-bold!">
+                                        TRANSPORT MODES
+                                    </h6>
+                                    <ol
+                                        className="flex flex-col gap-0!"
+                                        type="1"
+                                    >
+                                        <li className="m-0! p-0!">
+                                            <h3 className="m-0!">RAIL</h3>
+                                            <p>
+                                                Long-distance inland movement,
+                                                bulk transportation and
+                                                cross-border rail corridors.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>HOPPER WAGONS</h3>
+                                            <p>
+                                                For grain, fertilizers and dry
+                                                bulk commodities.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>SEA</h3>
+                                            <p>
+                                                Port-to-port transportation,
+                                                Caspian connections,
+                                                international shipping and
+                                                maritime distribution
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>ROAD</h3>
+                                            <p>
+                                                Border crossings, regional
+                                                distribution, first-mile and
+                                                last-mile operations.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>MULTIMODAL</h3>
+                                            <p>
+                                                Integrated combinations of rail,
+                                                sea and road with controlled
+                                                transfer points.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <div>
+                                    <h6 className="text-3xl font-bold!">
+                                        DOCUMENTATION & COMPLIANCE
+                                    </h6>
+                                    <ol
+                                        className="flex flex-col gap-0!"
+                                        type="1"
+                                    >
+                                        <li className="m-0! p-0!">
+                                            <h3 className="m-0!">
+                                                CUSTOMS DOCUMENTATION
+                                            </h3>
+                                            <p>
+                                                Export and transit declarations,
+                                                cargo documentation and customs
+                                                procedures.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>TRANSPORT DOCUMENTS</h3>
+                                            <p>
+                                                Railway, maritime and road
+                                                transport documentation.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>DANGEROUS GOODS</h3>
+                                            <p>
+                                                Applicable dangerous-goods
+                                                documentation and classification
+                                                requirements.
+                                            </p>
+                                        </li>
+                                        <li className="m-0! p-0!">
+                                            <h3>CERTIFICATES & PERMITS</h3>
+                                            <p>
+                                                Cargo-specific certificates,
+                                                export documents and regulatory
+                                                approvals where required.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </section>
+
                             <Image
                                 src="/images/service-img.jpg"
                                 alt="Service img"
@@ -208,104 +305,84 @@ export default function ServiceDetails() {
                                 height={300}
                             />
 
-                            <h3>What We Do</h3>
+                            <h3>WHAT WE NEED TO START</h3>
                             <p>
-                                We provide a full suite of business solutions
-                                designed to address your operational,
-                                technological, and strategic challenges:
+                                The movement remains coordinated through the
+                                final delivery point.
                             </p>
                             <ul>
                                 <li>
-                                    <h4>ERP Implementation & Customization</h4>
-                                    <p>
-                                        Align your enterprise processes with
-                                        robust ERP systems tailored to your
-                                        industry.
-                                    </p>
+                                    <h4>Cargo Type</h4>
                                 </li>
                                 <li>
-                                    <h4>
-                                        Business Intelligence & Data Analytics
-                                    </h4>
-                                    <p>
-                                        Gain real-time insights, improve
-                                        forecasting, and make data-driven
-                                        decisions.
-                                    </p>
+                                    <h4>Origin</h4>
                                 </li>
                                 <li>
-                                    <h4>Outsourcing & Shared Services</h4>
-                                    <p>
-                                        Access high-quality back-office
-                                        operations with cost-efficiency and
-                                        performance guarantees.
-                                    </p>
+                                    <h4>Destination</h4>
+                                </li>
+                                <li>
+                                    <h4>Volume / Weight</h4>
+                                </li>
+                                <li>
+                                    <h4>Loading Date</h4>
                                 </li>
                             </ul>
-                            <h4>Partner With Us</h4>
-                            <p>Ready to transform your business?</p>
-                            <p>
-                                Our experienced consultants, analysts, and
-                                technologists are ready to help you architect
-                                solutions that work — today and into the future.
-                            </p>
+                            <h4>Preferred Transport Mode</h4>
+                            <p>Dangerous Goods Status</p>
+                            <p>Required Delivery Time</p>
                         </div>
                         <div className="border-border divide-border mt-8 grid divide-x divide-y border sm:grid-cols-2 sm:divide-y-0">
                             <div className="space-y-6 p-6">
                                 <h3 className="font-red-hat after:bg-primary relative pb-2 text-2xl font-semibold text-black after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/4">
-                                    Industries We Serve
+                                    CARGO FLOWS WE HANDLE
                                 </h3>
                                 <ul className="space-y-3 font-medium lg:text-lg/6">
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Retail & E-Commerce
+                                        GENERAL CARGO
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Manufacturing & Logistics
+                                        DRY BULK
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Corporate & Government
+                                        BAGGED CARGO
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Healthcare
+                                        LIQUID BULK
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Education
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Financial Services
+                                        DANGEROUS GOODS
                                     </li>
                                 </ul>
                             </div>
                             <div className="space-y-6 p-6">
                                 <h3 className="font-red-hat after:bg-primary relative pb-2 text-2xl font-semibold text-black after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/4">
-                                    Why Choose Us?
+                                    CORRIDOR APPLICATION
                                 </h3>
                                 <ul className="space-y-3 font-medium lg:text-lg/6">
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Expertise Across Domains
+                                        NORTH–SOUTH
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Client-Centric Approach
+                                        TRANS-CASPIAN
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Proven Track Record
+                                        CENTRAL ASIA
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        Custom-Tailored Solutions
+                                        CAUCASUS–TÜRKİYE
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CircleCheckBig className="text-primary mt-0.75 size-4.5! shrink-0" />
-                                        24/7 Support & Service
+                                        CASPIAN–GULF
                                     </li>
                                 </ul>
                             </div>
@@ -376,15 +453,18 @@ export default function ServiceDetails() {
                                     <h3 className="text-primary font-red-hat text-2xl/7 font-bold">
                                         Need a talk with us?
                                     </h3>
-                                    <p className="mt-1.5 font-semibold">
-                                        We are here to help you with your
-                                        business.
+                                    <p className="mt-1.5 text-justify font-semibold">
+                                        Send us the cargo details and
+                                        origin–destination pair. We will
+                                        determine the applicable corridor,
+                                        transport combination, equipment
+                                        requirements and documentation scope.
                                     </p>
                                     <Button
                                         type="button"
                                         className="!btn mt-3.5 w-full"
                                     >
-                                        <span>Book a free consultation</span>
+                                        <span>REQUEST A ROUTE ASSESSMENT</span>
                                     </Button>
                                 </div>
                             </div>

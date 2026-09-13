@@ -22,7 +22,7 @@ export default function RecentServices({ services }: { services: Service[] }) {
             <div className="flex items-end justify-between gap-4">
                 <div className="section-heading" data-aos="fade-up">
                     <h3 className="after:left-0 after:translate-0">
-                        Rencent Services
+                        OPERATIONAL CONTROL
                     </h3>
                 </div>
                 <div className="ml-auto flex gap-2.5 sm:gap-4">
