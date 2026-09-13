@@ -8,24 +8,24 @@ import { Metadata } from 'next'
 import React from 'react'
 
 export const metadata: Metadata = {
-    title: 'Project | Cryzion',
+    title: 'Corridor | Cryzion',
     description:
         'Modern corporate template crafted for startups, IT componies, and tech innovators. Fast, responsive, and built with cutting-edge design principles.',
     openGraph: {
         ...helper.openGraphData,
-        url: process.env.NEXT_PUBLIC_APP_URL + '/project',
-        title: 'Project | Cryzion',
+        url: process.env.NEXT_PUBLIC_APP_URL + '/corridor',
+        title: 'Corridor | Cryzion',
     },
     twitter: {
         card: 'summary_large_image',
         site: '@cryzion',
-        title: 'Project | Cryzion',
+        title: 'Corridor | Cryzion',
         description:
             'Modern corporate template crafted for startups, IT companies, and tech innovators. Fast, responsive, and built with cutting-edge design principles.',
         images: [process.env.NEXT_PUBLIC_APP_URL + '/images/logo.png'],
     },
     alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/project`,
+        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/corridor`,
     },
 }
 
@@ -317,7 +317,7 @@ export default function Projects() {
                 <HeroSection
                     breadcrumbs={[
                         { label: 'Home', href: '/' },
-                        { label: 'Projects' },
+                        { label: 'Corridor' },
                     ]}
                     title={
                         <>

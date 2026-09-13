@@ -18,6 +18,7 @@ type HeroSectionProps = {
     breadcrumbs: BreadcrumbItem[]
     title: ReactNode
     description?: string
+    descriptions?: string[]
     descriptionClassName?: string
     category?: string
     date?: string
@@ -29,6 +30,7 @@ export default function HeroSection({
     breadcrumbs,
     title,
     description,
+    descriptions,
     descriptionClassName,
     category,
     date,
@@ -72,6 +74,10 @@ export default function HeroSection({
                 {description && (
                     <p className={descriptionClassName || ''}>{description}</p>
                 )}
+                
+                {descriptions &&
+                    descriptions.map((item, idx) => <p key={idx}>{item}</p>)}
+
                 {category && (
                     <div className="text-gray-light flex flex-wrap gap-5">
                         <Button type="button" asChild>

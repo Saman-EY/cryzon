@@ -36,11 +36,11 @@ import {
 function NavMenu({ className }: { className?: string }) {
     const pathname = usePathname()
     const [openDropdown, setOpenDropdown] = useState<
-        'services' | 'project' | 'blog' | null
+        'services' | 'corridor' | 'blog' | null
     >(null)
 
     const handleOpenChange =
-        (menu: 'services' | 'project' | 'blog') => (isOpen: boolean) => {
+        (menu: 'services' | 'corridor' | 'blog') => (isOpen: boolean) => {
             if (isOpen) {
                 setOpenDropdown(menu)
             } else {
@@ -108,35 +108,35 @@ function NavMenu({ className }: { className?: string }) {
                 </PopoverContent>
             </Popover>
             <Popover
-                open={openDropdown === 'project'}
-                onOpenChange={handleOpenChange('project')}
+                open={openDropdown === 'corridor'}
+                onOpenChange={handleOpenChange('corridor')}
             >
                 <PopoverTrigger asChild>
                     <button
                         type="button"
                         className={cn(
                             'nav-link flex w-full items-center justify-between gap-1.5 data-[state=open]:after:w-full [&[data-state=open]>svg]:rotate-180',
-                            pathname.startsWith('/project') && 'after:w-full!',
+                            pathname.startsWith('/corridor') && 'after:w-full!',
                         )}
                     >
-                        Projects
+                        Corridor
                         <ChevronDown className="size-4! transition" />
                     </button>
                 </PopoverTrigger>
                 <PopoverContent align="start">
                     <NavLink
-                        href="/project"
+                        href="/corridor"
                         className="flex w-full items-center gap-2 px-3 py-2 transition hover:text-black"
                         onClick={() => setOpenDropdown(null)}
                     >
-                        Projects
+                        Corridor
                     </NavLink>
                     <NavLink
-                        href="/project/project-details"
+                        href="/corridor/corridor-details"
                         className="flex w-full items-center gap-2 px-3 py-2 transition hover:text-black"
                         onClick={() => setOpenDropdown(null)}
                     >
-                        Project details
+                        Corridor details
                     </NavLink>
                 </PopoverContent>
             </Popover>
