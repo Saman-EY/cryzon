@@ -140,7 +140,7 @@ function NavMenu({ className }: { className?: string }) {
                     </NavLink>
                 </PopoverContent>
             </Popover>
-            <Popover
+            {/* <Popover
                 open={openDropdown === 'blog'}
                 onOpenChange={handleOpenChange('blog')}
             >
@@ -179,11 +179,11 @@ function NavMenu({ className }: { className?: string }) {
                         Blog details
                     </NavLink>
                 </PopoverContent>
-            </Popover>
+            </Popover> */}
             <NavLink href="/contact" className="nav-link">
                 Contact
             </NavLink>
-            <NavLink
+            {/* <NavLink
                 href="/rail-logistics"
                 className="nav-link whitespace-nowrap"
             >
@@ -200,7 +200,7 @@ function NavMenu({ className }: { className?: string }) {
                 className="nav-link whitespace-nowrap"
             >
                 4PL LOGISTICS
-            </NavLink>
+            </NavLink> */}
         </div>
     )
 }
