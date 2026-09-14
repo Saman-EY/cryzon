@@ -189,6 +189,18 @@ function NavMenu({ className }: { className?: string }) {
             >
                 Rail logistics
             </NavLink>
+            <NavLink
+                href="/sea-logistics"
+                className="nav-link whitespace-nowrap"
+            >
+                Sea logistics
+            </NavLink>
+            <NavLink
+                href="/4pl-logistics"
+                className="nav-link whitespace-nowrap"
+            >
+                4PL LOGISTICS
+            </NavLink>
         </div>
     )
 }
