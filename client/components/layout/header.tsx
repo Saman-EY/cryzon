@@ -53,7 +53,7 @@ function NavMenu({ className }: { className?: string }) {
     return (
         <div
             className={cn(
-                'flex w-full grow flex-col gap-2 bg-white px-4 py-6 transition-all duration-500 lg:flex-row lg:items-center lg:gap-8 lg:bg-transparent lg:p-0 2xl:gap-10',
+                'flex w-full grow flex-col gap-2 bg-white px-4 py-6 transition-all duration-500 md:gap-5 lg:flex-row lg:items-center lg:bg-transparent lg:p-0',
                 className,
             )}
         >
@@ -182,6 +182,12 @@ function NavMenu({ className }: { className?: string }) {
             </Popover>
             <NavLink href="/contact" className="nav-link">
                 Contact
+            </NavLink>
+            <NavLink
+                href="/rail-logistics"
+                className="nav-link whitespace-nowrap"
+            >
+                Rail logistics
             </NavLink>
         </div>
     )
