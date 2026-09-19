@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Check } from 'lucide-react'
+import { ArrowRight, Check } from 'lucide-react'
 import TestimonialSection from '@/components/common/testimonial-section'
 import LatestService from '@/components/common/latest-service'
 import ServingClient from '@/components/common/serving-client'
@@ -35,6 +35,124 @@ export const metadata: Metadata = {
     },
 }
 
+const countries = [
+    {
+        title: 'Rail',
+        description: '',
+        img: '/images/01_RAIL.png',
+    },
+    {
+        title: 'RZD',
+        description: 'Russian Railways',
+        img: '/images/02_RZD.png',
+    },
+    {
+        title: 'KTZ',
+        description: 'Kazakhstan Temir Zholy',
+        img: '/images/03_KTZ.png',
+    },
+    {
+        title: 'ADY',
+        description: 'Azerbaijan Railways',
+        img: '/images/04_ADY.png',
+    },
+    {
+        title: 'RAI',
+        description: 'Islamic Republic of Iran Railways',
+        img: '/images/05_RAI.png',
+    },
+    {
+        title: 'ARA',
+        description: 'Armenian Railways',
+        img: '/images/06_ARA.png',
+    },
+    {
+        title: 'TCDD',
+        description: 'Turkish State Railways',
+        img: '/images/07_TCDD.png',
+    },
+    {
+        title: 'PR',
+        description: 'Pakistan Railways',
+        img: '/images/08_PR.png',
+    },
+    {
+        title: 'Sea',
+        description: '',
+        img: '/images/09_SEA.png',
+    },
+    {
+        title: 'RU',
+        description: 'Russia',
+        img: '/images/10_RU.png',
+    },
+    {
+        title: 'AZ',
+        description: 'Azerbaijan',
+        img: '/images/11_AZ.png',
+    },
+    {
+        title: 'GCC',
+        description: 'Gulf Cooperation Council',
+        img: '/images/12_GCC.png',
+    },
+    {
+        title: 'AF',
+        description: 'Afghanistan',
+        img: '/images/13_AF.png',
+    },
+    {
+        title: 'IR',
+        description: 'Iran',
+        img: '/images/14_IR.png',
+    },
+    {
+        title: 'PK',
+        description: 'Pakistan',
+        img: '/images/15_PK.png',
+    },
+    {
+        title: 'IQ',
+        description: 'Iraq',
+        img: '/images/16_IQ.png',
+    },
+    {
+        title: 'Corridors',
+        description: '',
+        img: '/images/17_CORRIDORS.png',
+    },
+    {
+        title: 'INSTC',
+        description: 'International North–South Transport Corridor',
+        img: '/images/18_INSTC.png',
+    },
+    {
+        title: 'TITR',
+        description: 'Trans-Caspian Transport Route',
+        img: '/images/19_TITR.png',
+    },
+    {
+        title: 'TRACECA',
+        description: 'Transport Corridor Europe–Caucasus–Asia',
+        img: '/images/20_TRACECA.png',
+    },
+    {
+        title: 'CPEC',
+        description: 'China–Pakistan Economic Corridor',
+        img: '/images/21_CPEC.png',
+    },
+    {
+        title: 'CAREC',
+        description: 'Central Asia Regional Economic Cooperation',
+        img: '/images/22_CAREC.png',
+    },
+    {
+        title: 'NSR',
+        description: 'Northern Sea Route',
+        img: '/images/23_NSR.png',
+    },
+]
+
 export default function HomePage() {
     const services = [
         {
@@ -42,31 +160,30 @@ export default function HomePage() {
             title: 'Multimodal Logistics',
             description:
                 'One shipment. Multiple modes. One accountable logistics solution. We coordinate rail, sea, road and terminal operations across international trade routes.',
-            image: '/images/icon-mangement.png',
+            image: '/svgs/logistics.svg',
         },
         {
             id: 2,
             title: 'Rail Freight Solutions',
             description:
                 'Reliable rail capacity across Russia, Central Asia, the Caucasus, Iran and beyond — from wagon allocation and loading to transit and final delivery.',
-            image: '/images/icon-integration.png',
+            image: '/svgs/rail.svg',
         },
         {
             id: 3,
             title: 'Sea & Port Logistics',
             description:
                 'Connecting cargo to major ports and maritime routes across the Caspian, Black Sea, Persian Gulf and global markets — with coordinated port-to-port and multimodal execution.',
-            image: '/images/icon-ai.png',
+            image: '/svgs/sea.svg',
         },
         {
             id: 4,
             title: 'Customs & Trade Compliance',
             description:
                 'We manage the documentation, customs procedures, permits and regulatory requirements behind every movement — keeping cargo compliant, controlled and moving.',
-            image: '/images/icon-support.png',
+            image: '/svgs/customs_trade.svg',
         },
     ]
-
     const projectList = [
         {
             id: 1,
@@ -138,6 +255,7 @@ export default function HomePage() {
             answer: 'Yes. We coordinate cargo movement through key Russian maritime, rail and border gateways, connecting Russian origins with international markets.',
         },
     ]
+
     return (
         <>
             <div className="mb-16 grow space-y-16 lg:mb-25 lg:space-y-25">
@@ -263,203 +381,18 @@ export default function HomePage() {
                             transport corridors.
                         </h2>
                     </div>
-                    <div className="mt-10 flex flex-col justify-start overflow-x-auto pb-2 lg:mt-14">
-                        <div className="text-gray flex grid-cols-9 text-base lg:grid">
-                            <div className="border-border flex h-28 w-28 shrink-0 items-center justify-center border-x-2 border-y-2 text-center font-bold uppercase xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                RAIL
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-angular.svg"
-                                    alt="Angular"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                RZD
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-laravel.svg"
-                                    alt="Laravel"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                KTZ
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-html.svg"
-                                    alt="html"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                ADY
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-node-js.svg"
-                                    alt="node"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                RAI
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-react.svg"
-                                    alt="react"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                ARA
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-nuxt-js.svg"
-                                    alt="Nuxt.js"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                TCDD
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-y-2 border-r-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-tailwind-css.svg"
-                                    alt="Tailwind CSS"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                PR
-                            </div>
-                        </div>
-                        <div className="text-gray flex grid-cols-9 text-base lg:grid">
-                            <div className="border-border flex h-28 w-28 shrink-0 items-center justify-center border-x-2 border-b-2 text-center font-bold uppercase xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                Sea
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-flutter.svg"
-                                    alt="Flutter"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                RU
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-react.svg"
-                                    alt="React Native"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                AZ
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-ios.svg"
-                                    alt="iOS"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                GCC
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-android.svg"
-                                    alt="Android"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                AF
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-kotlin.svg"
-                                    alt="Kotlin"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                IR
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-swift.svg"
-                                    alt="Swift"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                PK
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-c++.svg"
-                                    alt="C++"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                IQ
-                            </div>
-                        </div>
-                        <div className="text-gray flex grid-cols-9 text-base lg:grid">
-                            <div className="border-border flex h-28 w-28 shrink-0 items-center justify-center border-x-2 border-b-2 text-center font-bold uppercase xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                CORRIDORS
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-figma.svg"
-                                    alt="Figma"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                INSTC
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-sketch.svg"
-                                    alt="Sketch"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                TITR
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-zeplin.svg"
-                                    alt="Zeplin"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                TRACECA
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-ai.svg"
-                                    alt="Adobe AI"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                CPEC
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-ps.svg"
-                                    alt="Adobe PS"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                CAREC
-                            </div>
-                            <div className="border-border flex h-28 w-28 shrink-0 flex-col items-center justify-center border-r-2 border-b-2 text-center font-semibold xl:h-36 xl:w-auto 2xl:h-[168px]">
-                                {/* <Image
-                                    src="/images/icon-ae.svg"
-                                    alt="Adobe AE"
-                                    width={60}
-                                    height={60}
-                                /> */}
-                                NSR
-                            </div>
-                        </div>
-                    </div>
+
+                    {/* GRID */}
+                    <section className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-8 my-5">
+                        {countries.map((country) => (
+                            <CountryCard
+                                key={country.title}
+                                title={country.title}
+                                description={country.description}
+                                img={country.img}
+                            />
+                        ))}
+                    </section>
                 </div>
 
                 <LogoAnimate />
@@ -777,5 +710,49 @@ export default function HomePage() {
                 }}
             />
         </>
+    )
+}
+
+type CountryCardProps = {
+    title: string
+    description: string
+    img: string
+}
+
+function CountryCard({ title, description, img }: CountryCardProps) {
+    return (
+        <div className="group relative h-44 w-full overflow-hidden rounded-lg">
+            {/* Background image */}
+            <Image
+                src={img}
+                alt={title}
+                fill
+                className="transition-transform duration-500 group-hover:scale-105"
+            />
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+
+            {/* Content */}
+            <div className="absolute inset-x-0 bottom-0 p-4">
+                <h3 className="text-lg font-semibold text-white uppercase">
+                    {title}
+                </h3>
+
+                {description && (
+                    <p className="mt-0.5 max-w-[90%] text-xs text-white/80">
+                        {description}
+                    </p>
+                )}
+
+                {/* Arrow */}
+                <button
+                    type="button"
+                    className="mt-3 flex size-7 items-center justify-center rounded-full border border-white/70 text-white transition-all duration-300 group-hover:bg-white group-hover:text-black"
+                >
+                    <ArrowRight className="size-4" />
+                </button>
+            </div>
+        </div>
     )
 }

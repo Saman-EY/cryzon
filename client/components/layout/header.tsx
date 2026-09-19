@@ -60,7 +60,7 @@ function NavMenu({ className }: { className?: string }) {
             <div className="flex items-center justify-between border-b border-black/10 pb-4 lg:hidden">
                 <NavLink href="/" className="inline-flex shrink-0">
                     <Image
-                        src="/images/logo.svg"
+                        src="/images/logo-white-bg.png"
                         alt="Logo"
                         width={406}
                         height={110}
@@ -296,11 +296,11 @@ const Header = () => {
                         <div className="flex items-center gap-10 xl:gap-20">
                             <NavLink href="/" className="shrink-0">
                                 <Image
-                                    src="/images/logo.svg"
+                                    src="/images/logo-white-bg.png"
                                     alt="Logo"
                                     width={120}
-                                    height={33}
-                                    className="w-26 sm:w-30"
+                                    height={43}
+                                    className="w-26 sm:w-35"
                                 />
                             </NavLink>
                             <NavMenu className="hidden lg:flex" />

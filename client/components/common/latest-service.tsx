@@ -43,9 +43,9 @@ export default function LatestService({
                                         <Image
                                             src={service.image}
                                             alt="Idea icon"
-                                            width={48}
-                                            height={48}
-                                            className="size-10 duration-300 lg:size-12"
+                                            width={65}
+                                            height={65}
+                                            className="size-10 duration-300 lg:size-18"
                                         />
                                     </div>
                                 </div>

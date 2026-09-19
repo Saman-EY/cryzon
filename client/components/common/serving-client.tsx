@@ -24,6 +24,7 @@ import {
     Truck,
     Warehouse,
 } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
 
 export default function ServingClient({
@@ -33,20 +34,20 @@ export default function ServingClient({
     className?: string
     variant?: 'light' | 'dark'
 }) {
-   const IconServices = [
-  { icon: Truck, label: "LOGISTICS" },
-  { icon: TrainFront, label: "RAIL" },
-  { icon: Ship, label: "MARITIME" },
-  { icon: Truck, label: "ROAD" },
-  { icon: Warehouse, label: "CUSTOMS" },
-  { icon: FileText, label: "DOCUMENTS" },
-  { icon: TriangleAlert, label: "DANGEROUS" },
-  { icon: BadgeCheck, label: "CERTIFICATION" },
-  { icon: PackageOpen, label: "BULK" },
-  { icon: Container, label: "ISOTANK" },
-  { icon: Boxes, label: "INTERMODAL" },
-  { icon: Package, label: "CARGO" },
-];
+    const IconServices = [
+        { icon: '/service-LOGISTICS.svg', label: 'LOGISTICS' },
+        { icon: '/service-RAIL.svg', label: 'RAIL' },
+        { icon: '/service-MARITIME.svg', label: 'MARITIME' },
+        { icon: '/service-ROAD.svg', label: 'ROAD' },
+        { icon: '/service-CUSTOMS.svg', label: 'CUSTOMS' },
+        { icon: '/service-DOCUMENTS.svg', label: 'DOCUMENTS' },
+        { icon: '/service-DANGEROUS.svg', label: 'DANGEROUS' },
+        { icon: '/service-CERTIFICATION.svg', label: 'CERTIFICATION' },
+        { icon: '/service-BULK.svg', label: 'BULK' },
+        { icon: '/service-ISOTANK.svg', label: 'ISOTANK' },
+        { icon: '/service-INTERMODAL.svg', label: 'INTERMODAL' },
+        { icon: '/service-CARGO.svg', label: 'CARGO' },
+    ]
 
     const isDark = variant === 'dark'
     return (
@@ -76,13 +77,49 @@ export default function ServingClient({
                             <div
                                 key={index}
                                 className={cn(
-                                    'relative z-1 flex aspect-square flex-col items-center justify-center gap-4 border duration-300 after:absolute after:inset-0 after:top-full after:-z-1 after:w-full after:bg-white after:duration-300 hover:after:top-0',
+                                    'group relative z-1 flex aspect-square flex-col items-center justify-center gap-4 border duration-300 after:absolute after:inset-0 after:top-full after:-z-1 after:w-full after:bg-white after:duration-300 hover:after:top-0',
                                     isDark
                                         ? 'border-border/5 hover:text-primary text-white'
                                         : 'border-border after:bg-primary hover:text-white',
                                 )}
                             >
-                                <Icon className="!size-10 stroke-1 md:!size-14" />
+                                {isDark ? (
+                                    <>
+                                        <Image
+                                            width={100}
+                                            height={100}
+                                            className="group-hover:hidden"
+                                            src={`/svgs/light${service.icon}`}
+                                            alt={service.label}
+                                        />
+                                        <Image
+                                            width={100}
+                                            height={100}
+                                            className="hidden group-hover:block"
+                                            src={`/svgs/dark${service.icon}`}
+                                            alt={service.label}
+                                        />
+                                    </>
+                                ) : (
+                                    <>
+                                        <Image
+                                            width={100}
+                                            height={100}
+                                            src={`/svgs/dark${service.icon}`}
+                                            className="group-hover:hidden"
+                                            alt={service.label}
+                                        />
+                                        <Image
+                                            width={100}
+                                            height={100}
+                                            src={`/svgs/light${service.icon}`}
+                                            className="hidden group-hover:block"
+                                            alt={service.label}
+                                        />
+                                    </>
+                                )}
+
+                                {/* <Icon className="!size-10 stroke-1 md:!size-14" /> */}
                                 <h2>{service.label}</h2>
                             </div>
                         )

@@ -14,10 +14,10 @@ export default function Sidebar() {
         >
             <div className="space-y-10">
                 <Image
-                    src="/images/logo.svg"
+                    src="/images/logo-white-bg.png"
                     alt="Logo"
-                    width={120}
-                    height={33}
+                    width={150}
+                    height={45}
                 />
                 <p>
                     We must explain to you how all seds this mistakens idea
