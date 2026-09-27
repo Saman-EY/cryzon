@@ -74,7 +74,13 @@ function NavMenu({ className }: { className?: string }) {
             <NavLink href="/about-us" className="nav-link">
                 About
             </NavLink>
-            <Popover
+            <NavLink href="/services" className="nav-link">
+                Services
+            </NavLink>
+            <NavLink href="/corridor" className="nav-link">
+                Corridor
+            </NavLink>
+            {/* <Popover
                 open={openDropdown === 'services'}
                 onOpenChange={handleOpenChange('services')}
             >
@@ -139,68 +145,11 @@ function NavMenu({ className }: { className?: string }) {
                         Corridor details
                     </NavLink>
                 </PopoverContent>
-            </Popover>
-            {/* <Popover
-                open={openDropdown === 'blog'}
-                onOpenChange={handleOpenChange('blog')}
-            >
-                <PopoverTrigger asChild>
-                    <button
-                        type="button"
-                        className={cn(
-                            'nav-link flex w-full items-center justify-between gap-1.5 data-[state=open]:after:w-full [&[data-state=open]>svg]:rotate-180',
-                            pathname.startsWith('/blog') && 'after:w-full!',
-                        )}
-                    >
-                        Blog
-                        <ChevronDown className="size-4! transition" />
-                    </button>
-                </PopoverTrigger>
-                <PopoverContent align="start">
-                    <NavLink
-                        href="/blog"
-                        className="flex w-full items-center gap-2 px-3 py-2 transition hover:text-black"
-                        onClick={() => setOpenDropdown(null)}
-                    >
-                        Blog
-                    </NavLink>
-                    <NavLink
-                        href="/blog/blog-two"
-                        className="flex w-full items-center gap-2 px-3 py-2 transition hover:text-black"
-                        onClick={() => setOpenDropdown(null)}
-                    >
-                        Blog style two
-                    </NavLink>
-                    <NavLink
-                        href="/blog/blog-details"
-                        className="flex w-full items-center gap-2 px-3 py-2 transition hover:text-black"
-                        onClick={() => setOpenDropdown(null)}
-                    >
-                        Blog details
-                    </NavLink>
-                </PopoverContent>
             </Popover> */}
+
             <NavLink href="/contact" className="nav-link">
                 Contact
             </NavLink>
-            {/* <NavLink
-                href="/rail-logistics"
-                className="nav-link whitespace-nowrap"
-            >
-                Rail logistics
-            </NavLink>
-            <NavLink
-                href="/sea-logistics"
-                className="nav-link whitespace-nowrap"
-            >
-                Sea logistics
-            </NavLink>
-            <NavLink
-                href="/4pl-logistics"
-                className="nav-link whitespace-nowrap"
-            >
-                4PL LOGISTICS
-            </NavLink> */}
         </div>
     )
 }

@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import helper from '@/lib/helper'
 import { Metadata } from 'next'
 import Link from 'next/link'
-import NetworkSection from './components/NetworkSection'
+import NetworkSection from './components(test)/NetworkSection'
 
 export const metadata: Metadata = {
     title: 'Corridor details | Cryzion',
